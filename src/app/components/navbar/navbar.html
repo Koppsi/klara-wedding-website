@@ -1,0 +1,51 @@
+<div class="navbar-container">
+    <h2 i18n>Neuer Text zum Übersetzen</h2>
+    <div class="nav-content">
+
+
+        <div class="logo-section">
+            <img src="assets/img/7.jpg" width="40px" height="40px" alt="Image">
+        </div>
+
+        @if (navItems && navItems.length > 0) {
+            <ul>
+                @for (nav of navItems; track $index) {
+                    <li 
+                        [ngClass]="{'active-item': nav.active}" 
+                        (click)="selectedItem(nav)">
+
+                        <ng-container [ngSwitch]="nav.path">
+                            @switch (nav.path) {
+                                @case ('home') {
+                                    <span i18n="@@nav.home">Home</span>
+                                }
+                                @case ('details') {
+                                    <span i18n="@@nav.details">Details</span>
+                                }
+                                @case ('rsvp') {
+                                    <span i18n="@@nav.rsvp">RSVP</span>
+                                }
+                                @case ('contact') {
+                                    <span i18n="@@nav.contact">Contact</span>
+                                }
+                                @case ('faqs') {
+                                    <span i18n="@@nav.faqs">FAQS</span>
+                                }
+                            }
+                        </ng-container>
+
+                        @if (nav.icon) {
+                            <i i18n class="{{nav.icon}}"></i>
+                        }
+                    </li>
+                }
+            </ul>
+        }
+
+        <button class="language-switch-button" (click)="changeLanguage()">
+            {{ currentLanguage }} / {{ targetLanguage }}
+        </button>
+
+    </div>
+
+</div>

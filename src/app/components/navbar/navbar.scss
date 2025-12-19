@@ -1,0 +1,58 @@
+@import '../../../themes/theme.scss';
+
+.navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 18px 0;
+
+    .nav-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 80%;
+    }
+
+    ul {
+        display: flex;
+        column-gap: 29px;
+        align-items: center;
+        margin: 0;
+
+        li {
+            list-style: none;
+            color: $app-text-grey;
+            font-size: 18px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            column-gap: 9px;
+            cursor: pointer;
+            i {
+                color: $app-text-grey;
+            }
+        }
+        .active-item {
+            color: $app-primary;
+            i {
+                color: $app-primary;
+            }
+        }
+    }
+
+    .language-switch-button {
+        margin-left: 20px;
+        padding: 8px 12px;
+        background-color: #007bff; // Beispiel-Hintergrundfarbe
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: bold;
+        
+        &:hover {
+            background-color: #0056b3;
+        }
+    }
+}
