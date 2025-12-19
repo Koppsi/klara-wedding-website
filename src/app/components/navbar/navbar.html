@@ -17,19 +17,19 @@
                         <ng-container [ngSwitch]="nav.path">
                             @switch (nav.path) {
                                 @case ('home') {
-                                    <span i18n="@@nav.home">Home</span>
+                                    <span>Home</span>
                                 }
                                 @case ('details') {
-                                    <span i18n="@@nav.details">Details</span>
+                                    <span>Details</span>
                                 }
                                 @case ('rsvp') {
-                                    <span i18n="@@nav.rsvp">RSVP</span>
+                                    <span>RSVP</span>
                                 }
                                 @case ('contact') {
-                                    <span i18n="@@nav.contact">Contact</span>
+                                    <span>Contact</span>
                                 }
                                 @case ('faqs') {
-                                    <span i18n="@@nav.faqs">FAQS</span>
+                                    <span>FAQS</span>
                                 }
                             }
                         </ng-container>
@@ -41,10 +41,6 @@
                 }
             </ul>
         }
-
-        <button class="language-switch-button" (click)="changeLanguage()">
-            {{ currentLanguage }} / {{ targetLanguage }}
-        </button>
 
     </div>
 
