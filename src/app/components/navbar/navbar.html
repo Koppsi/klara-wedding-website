@@ -1,7 +1,5 @@
-<div class="navbar-container">
-    <h2 i18n>Neuer Text zum Übersetzen</h2>
+<!-- <div class="navbar-container">
     <div class="nav-content">
-
 
         <div class="logo-section">
             <img src="assets/img/7.jpg" width="40px" height="40px" alt="Image">
@@ -35,7 +33,7 @@
                         </ng-container>
 
                         @if (nav.icon) {
-                            <i i18n class="{{nav.icon}}"></i>
+                            <i class="{{nav.icon}}"></i>
                         }
                     </li>
                 }
@@ -44,4 +42,37 @@
 
     </div>
 
-</div>
+</div> -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" routerLink="/">
+      <img src="assets/img/7.jpg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top me-2">
+      <span>September</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/details" routerLinkActive="active">Details</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/rsvp" routerLinkActive="active">RSVP</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contact" routerLinkActive="active">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/faqs" routerLinkActive="active">FAQS</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

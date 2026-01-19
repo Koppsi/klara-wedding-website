@@ -3,7 +3,6 @@ import { Navbar } from "../../components/navbar/navbar";
 
 @Component({
   selector: 'app-test',
-  imports: [Navbar],
   templateUrl: './test.html',
   styleUrl: './test.scss',
 })
