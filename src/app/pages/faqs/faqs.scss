@@ -1,0 +1,127 @@
+/* Spezifisches Hero Bild */
+.faq-hero {
+  /* Nimm hier ein eher abstraktes Bild oder Detailaufnahme */
+  background-image: url('/assets/img/Link card 4.png'); 
+  background-position: center;
+}
+
+.faq-container {
+  padding-bottom: 80px;
+}
+
+.intro-text {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 50px auto;
+  font-family: var(--font-sans);
+  color: var(--color-text-light);
+  font-size: 1.1rem;
+}
+
+/* --- FAQ ITEM STYLING --- */
+.faq-item {
+  border-bottom: 1px solid #e0e0e0;
+  margin-bottom: 10px;
+  
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.faq-question {
+  padding: 25px 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  /* Hover Effekt für die Frage */
+  &:hover {
+    h3 { color: var(--color-gold); }
+    .toggle-icon::before, .toggle-icon::after { background-color: var(--color-gold); }
+  }
+
+  h3 {
+    font-family: var(--font-serif);
+    font-size: 1.3rem;
+    margin: 0;
+    color: var(--color-text);
+    transition: color 0.3s;
+    padding-right: 20px;
+  }
+}
+
+/* --- DAS PLUS / MINUS ICON (CSS Only) --- */
+.toggle-icon {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  flex-shrink: 0; /* Verhindert, dass Icon gequetscht wird */
+
+  /* Die zwei Striche des Plus-Zeichens */
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    background-color: #ccc; /* Standard Grau */
+    transition: transform 0.3s ease, background-color 0.3s;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Horizontaler Strich */
+  &::before { width: 100%; height: 2px; }
+  /* Vertikaler Strich */
+  &::after { width: 2px; height: 100%; }
+}
+
+/* --- OPEN STATE (Wenn die Frage offen ist) --- */
+.faq-item.open {
+  .faq-question h3 {
+    color: var(--color-gold); /* Goldene Frage */
+  }
+
+  /* Aus dem Plus ein Minus machen (Vertikalen Strich drehen) */
+  .toggle-icon::after {
+    transform: translate(-50%, -50%) rotate(90deg); /* Dreht sich flach */
+    opacity: 0; /* Oder einfach ausblenden für Minus */
+  }
+  
+  .faq-answer {
+    max-height: 500px; /* Groß genug für lange Texte */
+    opacity: 1;
+  }
+}
+
+/* --- ANTWORT (Animation) --- */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+
+  .answer-content {
+    padding-bottom: 30px;
+    padding-right: 40px;
+    
+    p {
+      margin: 0;
+      font-family: var(--font-sans);
+      line-height: 1.7;
+      color: var(--color-text-light);
+    }
+  }
+}
+
+.still-questions {
+  text-align: center;
+  margin-top: 60px;
+  font-family: var(--font-sans);
+  color: var(--color-text-light);
+  
+  a {
+    color: var(--color-text);
+    text-decoration: underline;
+    font-weight: bold;
+    &:hover { color: var(--color-gold); }
+  }
+}

@@ -1,6 +1,152 @@
-/* You can add global styles to this file, and also import other style files */
-*{
-    color: black;
-    padding: 0px;
-    box-sizing: border-box;
+/* --- 1. FONTS & IMPORTS --- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@400;600&family=Pinyon+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap');
+
+:root {
+  /* ... deine anderen Variablen ... */
+  --font-script: 'Pinyon Script', cursive; /* Neue Variable für die Schnörkelschrift */
+}
+
+html {
+  font-size: 18px; /* Vorher war es Standard (meist 16px). Das macht ALLES größer. */
+}
+
+/* --- 2. VARIABLEN (Der Styleguide Core) --- */
+:root {
+  /* Farben */
+  --color-bg: #fdfcf8;
+  --color-text: #2c2c2c;
+  --color-text-light: #5d5d5d;
+  --color-gold: #c4a77d;
+  --color-lavender: #a6afc7;
+  --color-accent-red: #d68c92; /* Das Altrosa der Überschrift/Button */
+
+  /* ... deine bestehenden Variablen ... */
+  --color-pink-light: #f3e6e2; /* Das helle Rosa der Intro-Box */
+  --color-olive: #b8b894;      /* Das Grün der Info-Karten */
+  --color-olive-text: #ffffff; /* Weißer Text auf grünen Karten */
+  
+  /* Fonts */
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Montserrat', sans-serif;
+  --font-script: 'Pinyon Script', cursive;
+
+  /* Layout Standards */
+  --max-width: 1200px;
+  --grid-gap: 20px;
+  --page-padding: 20px;
+}
+
+/* --- 3. GLOBALE RESETS & TYPO --- */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-bg);
+  font-family: var(--font-sans);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+
+  /* NEU: Etwas mehr Zeilenabstand für bessere Lesbarkeit */
+  line-height: 1.6; 
+  /* NEU: Sicherstellen, dass die Schrift nicht zu dünn ist */
+  font-weight: 400;
+}
+
+h1, h2, h3, .serif-font {
+  font-family: var(--font-serif);
+}
+
+.script-font {
+  font-family: var(--font-script);
+}
+
+/* --- 4. LAYOUT UTILITIES (Hier kommt dein Code rein!) --- */
+
+/* Klasse für zentrierten Inhalt mit max. Breite */
+.container-centered {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--page-padding);
+  box-sizing: border-box; /* Wichtig, damit Padding nicht die Breite sprengt */
+}
+
+/* Das responsive 2-Spalten Grid */
+.grid-2-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--grid-gap);
+  width: 100%;
+  margin-bottom: 40px;
+
+  /* Mobile Breakpoint */
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+
+/* Basis-Style für interaktive Kacheln */
+.hover-tile {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+
+  /* Zoom-Effekt beim Hovern */
+  &:hover > .tile-content, 
+  &:hover > * {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+}
+
+/* --- POLAROID UTILITY --- */
+.polaroid {
+  background-color: white;
+  padding: 15px 15px 50px 15px; /* Unten viel Platz für "Handschrift" */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: sepia(20%); /* Optional: Leichter Vintage Look */
+  }
+
+  /* Der handschriftliche Text auf dem Polaroid */
+  .caption {
+    font-family: 'Bradley Hand', 'Brush Script MT', cursive; /* Oder deine Script-Font */
+    color: var(--color-text);
+    text-align: center;
+    margin-top: 15px;
+    font-size: 1.2rem;
+    transform: rotate(-1deg);
+  }
+}
+
+/* --- BUTTON STYLE --- */
+.btn-primary {
+  background-color: var(--color-accent-red);
+  color: white;
+  border: none;
+  padding: 15px 60px;
+  border-radius: 50px; /* Pillenform */
+  font-family: var(--font-sans);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: inline-block;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #c07a80; /* Etwas dunkler beim Hover */
+  }
 }

@@ -1,0 +1,49 @@
+.wedding-footer {
+  width: 100%;
+  /* Hier dein Blumenbild laden */
+  background-image: url('/assets/img/Blumen2 bunt.png'); 
+  background-size: cover;     /* Bild füllt den Bereich */
+  background-position: bottom center; /* Wichtig: Blumen unten zentriert */
+  background-repeat: no-repeat;
+  background-color: #fdfcf8;  /* Fallback Farbe (Creme) */
+  
+  height: 350px;              /* Höhe anpassen je nach Bild */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+  /* Kleiner Abstand nach oben */
+  margin-top: 50px; 
+}
+
+.footer-content {
+  padding: 20px;
+  
+  .names {
+    font-family: var(--font-script, cursive); /* Unsere neue Schrift */
+    font-size: 4rem; /* Schön groß */
+    color: #5d5d5d;  /* Dunkelgrau/Braun passend zum Thema */
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 400;
+  }
+
+  .date {
+    font-family: 'Playfair Display', serif; /* Die Serif Schrift vom Rest der Seite */
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #5d5d5d;
+  }
+}
+
+/* Mobile Anpassung */
+@media (max-width: 768px) {
+  .wedding-footer {
+    height: 250px; /* Etwas kleiner auf dem Handy */
+  }
+  .footer-content .names {
+    font-size: 3rem;
+  }
+}

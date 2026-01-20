@@ -1,58 +1,118 @@
-@import '../../../themes/theme.scss';
+/* --- NAVBAR.SCSS --- */
 
-.navbar-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Falls du globale Variablen in theme.scss hast, importiere sie. 
+   Ansonsten greifen hier die CSS-Variablen aus styles.scss (:root) */
+@import '../../../themes/theme.scss'; 
+
+/* Basis-Anpassungen der Bootstrap Navbar */
+.navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: var(--color-bg, #fdfcf8) !important; /* Hintergrund passend zur Seite */
+  
+  /* Optional: Wenn du den Bootstrap-Schatten weicher machen willst */
+  &.shadow-sm {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05) !important;
+  }
+}
+
+/* --- LOGO & MARKENNAME --- */
+.navbar-brand {
+  span {
+    font-family: var(--font-serif, 'Playfair Display', serif);
+    font-weight: 600;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    color: var(--color-text, #2c2c2c);
+  }
+
+  img {
+    border-radius: 50%; /* Falls das Logo-Bild rund sein soll */
+    object-fit: cover;
+  }
+}
+
+/* --- NAVIGATION LINKS (Home, Details, etc.) --- */
+.nav-link {
+  font-family: var(--font-sans, 'Montserrat', sans-serif);
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  color: #5f687d !important; /* Standardfarbe (Grau) */
+  transition: color 0.3s ease;
+  margin-left: 10px;
+  margin-right: 10px;
+  
+  &:hover {
+    color: var(--color-gold, #c4a77d) !important; /* Gold beim Hover */
+  }
+  
+  /* Der aktive Link (wo man gerade ist) */
+  &.active {
+    color: var(--color-gold, #c4a77d) !important;
+    font-weight: 600;
+  }
+}
+
+/* --- SPRACHUMSCHALTER (DE | EN) --- */
+.language-switcher {
+  display: flex;
+  align-items: center;
+  font-family: var(--font-sans, 'Montserrat', sans-serif);
+  font-size: 0.9rem;
+  
+  /* DESKTOP STYLES (ab 992px) */
+  /* Hier machen wir den Abstand und den vertikalen Trennstrich */
+  @media (min-width: 992px) { 
+    margin-left: 30px;      /* Abstand zum letzten Menüpunkt */
+    padding-left: 20px;     /* Innenabstand zur Linie */
+    border-left: 1px solid #e0e0e0; /* Die graue Trennlinie links */
+    height: 24px;           /* Höhe der Linie festlegen */
+  }
+
+  /* MOBILE STYLES (unter 992px) */
+  /* Hier machen wir einen horizontalen Trennstrich oben */
+  @media (max-width: 991px) {
+    margin-top: 20px;
+    padding-top: 15px;
     width: 100%;
-    padding: 18px 0;
+    justify-content: center; /* Zentriert auf Handy */
+    border-top: 1px solid #eee; /* Die graue Trennlinie oben */
+  }
 
-    .nav-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 80%;
+  /* Der kleine Strich zwischen DE und EN */
+  .divider {
+    margin: 0 10px;
+    color: #ddd;
+    font-weight: 300;
+    user-select: none; /* Damit man den Strich nicht markieren kann */
+  }
+
+  /* Die Buttons selbst (DE / EN) */
+  .lang-btn {
+    cursor: pointer;          /* Zeigt die Hand an -> Klickbar */
+    color: #a0a0a0;           /* Helles Grau für inaktive Sprache */
+    transition: all 0.2s ease;
+    padding: 2px 0;
+    
+    /* Hover Effekt */
+    &:hover {
+      color: var(--color-gold, #c4a77d);
     }
 
-    ul {
-        display: flex;
-        column-gap: 29px;
-        align-items: center;
-        margin: 0;
-
-        li {
-            list-style: none;
-            color: $app-text-grey;
-            font-size: 18px;
-            font-weight: bold;
-            display: flex;
-            align-items: center;
-            column-gap: 9px;
-            cursor: pointer;
-            i {
-                color: $app-text-grey;
-            }
-        }
-        .active-item {
-            color: $app-primary;
-            i {
-                color: $app-primary;
-            }
-        }
+    /* AKTIVE SPRACHE */
+    &.active-lang {
+      color: var(--color-text, #000); /* Schwarz/Dunkel */
+      font-weight: 700;               /* Fett */
+      transform: scale(1.05);         /* Minimal größer */
     }
+  }
+}
 
-    .language-switch-button {
-        margin-left: 20px;
-        padding: 8px 12px;
-        background-color: #007bff; // Beispiel-Hintergrundfarbe
-        color: white;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        font-weight: bold;
-        
-        &:hover {
-            background-color: #0056b3;
-        }
-    }
+/* --- HAMBURGER MENU BUTTON (Mobile) --- */
+.navbar-toggler {
+  border: none; /* Rahmen entfernen für cleaneren Look */
+  &:focus {
+    box-shadow: none; /* Den blauen Standard-Rahmen bei Klick entfernen */
+  }
 }

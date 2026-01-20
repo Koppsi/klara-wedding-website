@@ -1,0 +1,104 @@
+.rsvp-page {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  max-width: 800px; /* Diese Seite ist etwas schmaler als der Rest */
+}
+
+/* --- OBERES BILD --- */
+.top-photo-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+
+  .polaroid {
+    width: 300px; /* Feste Breite für den Look */
+    transform: rotate(3deg); /* Leichte Drehung nach rechts */
+    
+    @media (max-width: 768px) {
+      width: 80%; /* Auf Handy breiter */
+    }
+  }
+}
+
+/* --- TEXT BLÖCKE --- */
+.text-block {
+  text-align: center; /* Zentrierter Text */
+  margin-bottom: 60px;
+
+  .story-title {
+    color: var(--color-accent-red);
+    font-family: var(--font-serif);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+
+  .story-text {
+    font-family: var(--font-sans);
+    line-height: 1.8;
+    color: var(--color-text-light);
+    font-size: 0.95rem;
+    max-width: 600px;
+    margin: 0 auto; /* Textblock selbst zentrieren */
+    text-align: justify; /* Blocksatz oder 'center' je nach Geschmack */
+    text-align-last: center; /* Letzte Zeile zentriert */
+  }
+}
+
+.bottom-block {
+  margin-top: 50px;
+  
+  .btn-primary {
+    margin-top: 30px;
+  }
+}
+
+/* --- FOTO COLLAGE (Das Überlappen) --- */
+.photo-collage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 400px; /* Platzhalterhöhe für die absolute Positionierung */
+  margin-bottom: 20px;
+
+  @media (max-width: 768px) {
+    height: 650px;
+  }
+
+  .polaroid {
+    width: 280px;
+    position: absolute; /* Wichtig für Überlappung */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    
+    @media (max-width: 768px) {
+      width: 75%;
+    }
+  }
+
+  .img-left {
+    left: 10%; /* Sitzt links */
+    transform: rotate(-5deg);
+    z-index: 1; /* Liegt unten */
+    
+    @media (max-width: 768px) {
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%) rotate(-3deg);
+    }
+  }
+
+  .img-right {
+    right: 10%; /* Sitzt rechts */
+    transform: rotate(4deg);
+    z-index: 2; /* Liegt oben drauf */
+    top: 50px; /* Etwas tiefer versetzt */
+    
+    @media (max-width: 768px) {
+      right: auto;
+      left: 18%;
+      top: 280px;
+    }
+  }
+}

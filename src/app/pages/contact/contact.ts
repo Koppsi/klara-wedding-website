@@ -3,11 +3,11 @@ import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-details',
+  selector: 'app-contact',
   imports: [CommonModule, TranslateModule],
-  templateUrl: './details.html',
-  styleUrl: './details.scss',
+  templateUrl: './contact.html',
+  styleUrl: './contact.scss',
 })
-export class Details {
+export class Contact {
 
 }

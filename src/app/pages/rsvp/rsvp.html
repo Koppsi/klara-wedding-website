@@ -1,0 +1,39 @@
+<div class="rsvp-page container-centered">
+
+  <div class="top-photo-section">
+    <div class="polaroid rotate-right">
+      <img src="assets/img/Link card 1.png" alt="Couple Hiking">
+      <div class="caption">05/18/25</div>
+    </div>
+  </div>
+
+  <div class="text-block">
+    <h2 class="story-title">{{ 'RSVP.TITLE' | translate }}</h2>
+    <p class="story-text">
+      {{ 'RSVP.TEXT_TOP' | translate }}
+    </p>
+  </div>
+
+  <div class="photo-collage">
+    <div class="polaroid img-left">
+      <img src="assets/img/Link card 2.png" alt="Lake">
+    </div>
+    <div class="polaroid img-right">
+      <img src="assets/img/Link card 3.png" alt="Selfie">
+    </div>
+  </div>
+
+  <div class="text-block bottom-block">
+    <p class="story-text">
+      {{ 'RSVP.TEXT_BOTTOM' | translate }}
+    </p>
+    
+    <button class="btn-primary" (click)="scrollToForm()">
+      RSVP
+    </button>
+  </div>
+
+  <div id="rsvpFormSection">
+    </div>
+
+</div>

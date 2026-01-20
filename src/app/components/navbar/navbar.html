@@ -1,49 +1,3 @@
-<!-- <div class="navbar-container">
-    <div class="nav-content">
-
-        <div class="logo-section">
-            <img src="assets/img/7.jpg" width="40px" height="40px" alt="Image">
-        </div>
-
-        @if (navItems && navItems.length > 0) {
-            <ul>
-                @for (nav of navItems; track $index) {
-                    <li 
-                        [ngClass]="{'active-item': nav.active}" 
-                        (click)="selectedItem(nav)">
-
-                        <ng-container [ngSwitch]="nav.path">
-                            @switch (nav.path) {
-                                @case ('home') {
-                                    <span>Home</span>
-                                }
-                                @case ('details') {
-                                    <span>Details</span>
-                                }
-                                @case ('rsvp') {
-                                    <span>RSVP</span>
-                                }
-                                @case ('contact') {
-                                    <span>Contact</span>
-                                }
-                                @case ('faqs') {
-                                    <span>FAQS</span>
-                                }
-                            }
-                        </ng-container>
-
-                        @if (nav.icon) {
-                            <i class="{{nav.icon}}"></i>
-                        }
-                    </li>
-                }
-            </ul>
-        }
-
-    </div>
-
-</div> -->
-
 <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
   <div class="container-fluid">
     <a class="navbar-brand d-flex align-items-center" routerLink="/">
@@ -56,12 +10,13 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
+      <ul class="navbar-nav ms-auto align-items-center">
+
         <li class="nav-item">
-          <a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a>
+          <a class="nav-link" routerLink="/home" routerLinkActive="active">{{ 'HEADER.MENU_HOME' | translate }}</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/details" routerLinkActive="active">Details</a>
+          <a class="nav-link" routerLink="/details" routerLinkActive="active">{{ 'HEADER.MENU_DETAILS' | translate }}</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" routerLink="/rsvp" routerLinkActive="active">RSVP</a>
@@ -72,6 +27,19 @@
         <li class="nav-item">
           <a class="nav-link" routerLink="/faqs" routerLinkActive="active">FAQS</a>
         </li>
+
+        <li class="nav-item language-switcher">
+          <span 
+            (click)="changeLanguage('de')" 
+            [class.active-lang]="currentLang === 'de'" 
+            class="lang-btn">DE</span>
+          <span class="divider">|</span>
+          <span 
+            (click)="changeLanguage('en')" 
+            [class.active-lang]="currentLang === 'en'" 
+            class="lang-btn">EN</span>
+        </li>
+
       </ul>
     </div>
   </div>

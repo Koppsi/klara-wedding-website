@@ -1,0 +1,36 @@
+<div class="page-hero faq-hero">
+  <div class="hero-overlay">
+    <h1>{{ 'FAQS.TITLE' | translate }}</h1>
+  </div>
+</div>
+
+<div class="container-centered faq-container">
+  
+  <div class="intro-text">
+    <p>{{ 'FAQS.INTRO' | translate }}</p>
+  </div>
+
+  <div class="faq-list">
+    @for (item of faqItems; track $index) {
+      <div class="faq-item" [class.open]="item.isOpen">
+        
+        <div class="faq-question" (click)="toggleFaq($index)">
+          <h3>{{ item.question | translate }}</h3>
+          <span class="toggle-icon"></span>
+        </div>
+
+        <div class="faq-answer">
+          <div class="answer-content">
+            <p>{{ item.answer | translate }}</p>
+          </div>
+        </div>
+
+      </div>
+    }
+  </div>
+
+  <div class="still-questions">
+    <p>{{ 'FAQS.STILL_QUESTIONS' | translate }} <a href="/contact">Contact us</a></p>
+  </div>
+
+</div>

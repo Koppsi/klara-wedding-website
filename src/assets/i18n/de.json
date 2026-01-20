@@ -1,0 +1,28 @@
+{
+  "DETAILS": {
+    "TITLE": "Die Details",
+    "INTRO_TEXT": "Wir laden euch herzlich zu unserer Hochzeit auf den Klausenhof ein..."
+  },
+  "HERO": {
+    "DATE": "Samstag, 12. September 2026"
+  },
+  "HEADER": {
+    "MENU_HOME": "Startseite",
+    "MENU_DETAILS": "Details",
+    "MENU_RSVP": "RSVP"
+  },
+  "RSVP": {
+    "TITLE": "Where the Wild Things Wed",
+    "TEXT_TOP": "We met at an art walk in Seattle, literally bumping into each other...",
+    "TEXT_BOTTOM": "It feels right to celebrate surrounded by the people who get us..."
+  },
+  "CONTACT": {
+    "TITLE": "Kontakt",
+    "INTRO": "Wir freuen uns riesig darauf, mit euch zu feiern! Wenn ihr Fragen zur Location, Unterkunft habt oder einfach Hallo sagen wollt, meldet euch.",
+    "GENERAL_QUESTIONS": "Allgemeine Fragen",
+    "GENERAL_SUB": "Für Fragen zur Zusage oder Essen",
+    "MAILING_ADDRESS": "Postadresse",
+    "DAY_OF": "Am Hochzeitstag",
+    "DAY_OF_SUB": "Bitte wendet euch bei dringenden Fragen am Hochzeitstag an unsere Trauzeugin."
+  }
+}

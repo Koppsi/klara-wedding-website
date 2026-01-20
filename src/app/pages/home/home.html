@@ -1,17 +1,33 @@
-<div class="background-image-container">
-    <img src="assets/img/image.png" alt="Image" style="width: 100%;">
-    <div class="centered">With love and gratitude, we invite you to share in the joy of our wedding day.</div>
+<div class="hero-section">
+  <div class="hero-overlay">
+    <p class="subtitle">{{ 'HERO.SUBTITLE' | translate }}</p>
+    <h1 class="date">{{ 'HERO.DATE' | translate }}</h1>
+  </div>
 </div>
 
-<div class="container">
-    <div class="col-12" style="display: flex;">
-        <div class="row">
-            <img src="assets/img\Link card 1.png" alt="Image">
-            <img src="assets/img\Link card 2.png" alt="Image">
-        </div>
-        <div class="row">
-            <img src="assets/img\Link card 3.png" alt="Image">
-            <img src="assets/img\Link card 4.png" alt="Image">
-        </div>
+<div class="container-centered grid-2-cols mt-4">
+  
+  <a routerLink="/details" class="hover-tile tile-details">
+    <div class="tile-content">
+      <span>{{ 'HEADER.MENU_DETAILS' | translate }}</span>
     </div>
+  </a>
+
+  <a routerLink="/rsvp" class="hover-tile tile-rsvp">
+    <div class="tile-content">
+      <span>{{ 'HEADER.MENU_RSVP' | translate }}</span>
+    </div>
+  </a>
+
+  <a routerLink="/contact" class="hover-tile tile-contact">
+    <div class="tile-content">
+      <span>Contact</span> </div>
+  </a>
+
+  <a routerLink="/faqs" class="hover-tile tile-faq">
+    <div class="tile-content">
+      <span>FAQ</span>
+    </div>
+  </a>
+
 </div>
