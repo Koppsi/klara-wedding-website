@@ -94,12 +94,12 @@
 /* Spezieller Style für den "Notfallkontakt" */
 .day-of-contact {
   background-color: var(--color-bg); /* Oder ganz leichtes Grau/Grün */
-  border: 1px solid var(--color-olive);
+  border: 1px solid var(--color-green);
   padding: 20px;
   border-radius: 4px;
 
   h3 {
-    color: var(--color-olive); /* Passend zur Details Seite */
+    color: var(--color-green); /* Passend zur Details Seite */
     font-size: 1.1rem;
     font-weight: bold;
   }

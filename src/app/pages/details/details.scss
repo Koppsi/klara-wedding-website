@@ -1,9 +1,9 @@
-/* --- HERO STYLES (Spezifisch für Unterseiten) --- */
+/* --- HERO --- */
 .page-hero {
   position: relative;
-  height: 50vh; /* Kleiner als auf der Startseite */
+  height: 50vh;
   width: 100%;
-  background-image: url('/assets/img/Link card 1.png'); /* Dein Landschaftsbild */
+  background-image: url('/assets/img/Link card 1.png');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -12,7 +12,7 @@
   margin-bottom: 60px;
 
   h1 {
-    color: white;
+    color: var(--color-white);
     font-size: 3rem;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -21,19 +21,18 @@
   }
 }
 
-/* Der zweite Hero Banner (Travel & Stay) */
 .travel-hero {
-  background-image: url('/assets/img/Link card 2.png'); /* Das Bild mit dem blauen Himmel */
+  background-image: url('/assets/img/Link card 2.png');
   height: 40vh;
-  margin: 60px 0; /* Abstand nach oben und unten */
+  margin: 60px 0;
 }
 
 /* --- INTRO BOX (Rosa) --- */
 .intro-box {
-  background-color: var(--color-pink-light);
+  background-color: var(--color-rosa); /* Deine neue Farbe! */
   padding: 60px 40px;
   text-align: center;
-  border-radius: 8px; /* Leicht abgerundet */
+  border-radius: var(--border-radius-soft);
   margin-bottom: 40px;
   
   p {
@@ -42,12 +41,12 @@
     line-height: 1.6;
     max-width: 600px;
     margin: 0 auto;
-    color: white; /* Oder dunkelgrau, je nach Bildvorlage */
-    /* Im Bild sieht es weiß aus, aber prüf mal den Kontrast. Sonst var(--color-text) nehmen */
-    color: white; 
+    /* Da der Hintergrund helles Rosa ist, ist Weißer Text vielleicht schwer zu lesen? */
+    /* Wir nutzen Dunkelgrau oder Weiß mit Schatten. Ich nehme Text Dark für Lesbarkeit oder Weiß */
+    color: var(--color-white); 
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
   }
   
-  /* Der goldene Strich unten im Design */
   .separator-line {
     width: 100px;
     height: 2px;
@@ -56,23 +55,24 @@
   }
 }
 
-/* --- DETAIL CARDS (Grün & Bilder) --- */
+/* --- DETAIL CARDS (Grün) --- */
 .detail-card {
-  background-color: var(--color-olive);
-  color: var(--color-olive-text);
+  background-color: var(--color-green); /* Deine neue Farbe! */
+  color: var(--color-text-light); /* Das helle #FEEFEF oder Weiß */
   padding: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  min-height: 300px; /* Damit sie quadratisch wirken */
+  min-height: 300px;
   
   h3 {
     font-family: var(--font-serif);
     font-size: 1.5rem;
     margin-bottom: 10px;
     text-transform: uppercase;
+    color: var(--color-white); /* Überschriften Weiß */
   }
   
   p {
@@ -92,11 +92,7 @@
   margin-bottom: 80px;
 }
 
-/* Mobile Anpassungen */
 @media (max-width: 768px) {
   .page-hero h1 { font-size: 2rem; }
   .intro-box { padding: 30px 20px; }
-  /* Die Reihenfolge auf Mobile ändern (Bild -> Text -> Text -> Bild)? 
-     Das Grid macht standardmäßig: Element 1, 2, 3, 4 untereinander. 
-     Das passt laut deinem Screenshot perfekt! */
 }

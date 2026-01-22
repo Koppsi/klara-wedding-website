@@ -1,13 +1,8 @@
-/* Variablen (könnten auch global sein) */
-$font-serif: 'Playfair Display', serif;
-$font-sans: 'Montserrat', sans-serif;
-
-/* --- 1. HERO SECTION --- */
+/* --- HERO SECTION --- */
 .hero-section {
   position: relative;
-  height: 80vh; /* 80% der Bildschirmhöhe */
+  height: 80vh;
   width: 100%;
-  /* Dein großes Bild oben */
   background-image: url('/assets/img/image.png'); 
   background-size: cover;
   background-position: center;
@@ -16,7 +11,7 @@ $font-sans: 'Montserrat', sans-serif;
   justify-content: center;
   text-align: center;
 
-  /* Dunkler Schleier, damit weiße Schrift lesbar ist */
+  /* Overlay */
   &::before {
     content: '';
     position: absolute;
@@ -25,12 +20,12 @@ $font-sans: 'Montserrat', sans-serif;
   }
 
   .hero-overlay {
-    position: relative; /* Damit es über dem Schleier liegt */
-    color: white;
+    position: relative;
+    color: var(--color-white);
     padding: 20px;
 
     .subtitle {
-      font-family: $font-sans;
+      font-family: var(--font-sans);
       font-size: 1.2rem;
       text-transform: uppercase;
       letter-spacing: 2px;
@@ -38,7 +33,7 @@ $font-sans: 'Montserrat', sans-serif;
     }
 
     .date {
-      font-family: $font-serif;
+      font-family: var(--font-serif);
       font-size: 3rem;
       font-weight: 400;
       margin: 0;
@@ -46,68 +41,55 @@ $font-sans: 'Montserrat', sans-serif;
   }
 }
 
-/* --- 2. GRID SECTION --- */
+/* --- GRID SECTION --- */
 .grid-container {
   display: grid;
-  /* Desktop: 2 Spalten, jeweils 50% breit */
   grid-template-columns: 1fr 1fr; 
   width: 100%;
-  margin: 0;
-  padding: 0;
+  /* Globale Abstände nutzen */
+  gap: var(--grid-gap); 
+  padding: var(--page-padding);
+  max-width: var(--max-width);
+  margin: 0 auto 40px auto;
 
-  /* Mobile: Untereinander (1 Spalte) */
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
+    gap: 15px;
   }
 }
 
 .grid-tile {
   position: relative;
-  height: 400px; /* Höhe der Kacheln */
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Macht sie quadratisch */
+  min-height: 400px;
+  
   display: flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none; /* Unterstreichung weg */
+  text-decoration: none;
   background-size: cover;
   background-position: center;
   transition: transform 0.3s ease;
   overflow: hidden;
   cursor: pointer;
 
-  /* Schrift-Styling in der Kachel */
-  span {
-    font-family: $font-serif;
-    color: white;
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    z-index: 2;
-    position: relative;
-    text-shadow: 0 2px 10px rgba(0,0,0,0.5); /* Schatten für Lesbarkeit */
-  }
-
-  /* Hover Effekt: Leicht reinzoomen */
+  /* Hover Zoom */
   &:hover {
-    .tile-content {
-      transform: scale(1.05);
-    }
+    .tile-content { transform: scale(1.05); }
   }
 }
 
-/* src/app/pages/home/home.scss */
-
-/* Du brauchst hier keine Grid-Definition mehr! */
-
+/* Spezifische Kacheln */
 .tile-details, .tile-rsvp, .tile-contact, .tile-faq {
-  height: 400px; /* Höhe ist spezifisch für diese Kacheln */
+  /* Hintergrundbilder */
   background-size: cover;
   background-position: center;
   
-  /* Text Styling */
   span {
-    font-family: var(--font-serif); /* Nutzung der globalen Variable */
-    color: white;
-    font-size: 2rem;
+    font-family: var(--font-serif);
+    color: var(--color-white);
+    font-size: 2.5rem; /* Größer */
     text-transform: uppercase;
     letter-spacing: 4px;
     z-index: 2;
@@ -115,7 +97,7 @@ $font-sans: 'Montserrat', sans-serif;
   }
 }
 
-/* Hintergründe definieren */
+/* Bild-Zuordnungen */
 .tile-details { background-image: url('/assets/img/Link card 1.png'); }
 .tile-rsvp    { background-image: url('/assets/img/Link card 2.png'); }
 .tile-contact { background-image: url('/assets/img/Link card 3.png'); }

@@ -1,32 +1,32 @@
 .rsvp-page {
   padding-top: 60px;
   padding-bottom: 60px;
-  max-width: 800px; /* Diese Seite ist etwas schmaler als der Rest */
+  max-width: 800px;
 }
 
-/* --- OBERES BILD --- */
+/* --- POLAROID DREHUNGEN --- */
 .top-photo-section {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 
   .polaroid {
-    width: 300px; /* Feste Breite für den Look */
-    transform: rotate(3deg); /* Leichte Drehung nach rechts */
+    width: 450px; /* Größer wie besprochen */
+    transform: rotate(3deg);
     
     @media (max-width: 768px) {
-      width: 80%; /* Auf Handy breiter */
+      width: 85%;
     }
   }
 }
 
 /* --- TEXT BLÖCKE --- */
 .text-block {
-  text-align: center; /* Zentrierter Text */
+  text-align: center;
   margin-bottom: 60px;
 
   .story-title {
-    color: var(--color-accent-red);
+    color: var(--color-red); /* Deine neue rote Farbe! */
     font-family: var(--font-serif);
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -37,68 +37,59 @@
   .story-text {
     font-family: var(--font-sans);
     line-height: 1.8;
-    color: var(--color-text-light);
-    font-size: 0.95rem;
+    color: var(--color-accent-dark);
+    font-size: 1rem;
     max-width: 600px;
-    margin: 0 auto; /* Textblock selbst zentrieren */
-    text-align: justify; /* Blocksatz oder 'center' je nach Geschmack */
-    text-align-last: center; /* Letzte Zeile zentriert */
+    margin: 0 auto;
+    text-align: justify;
+    text-align-last: center;
   }
 }
 
 .bottom-block {
   margin-top: 50px;
-  
-  .btn-primary {
-    margin-top: 30px;
-  }
+  .btn-primary { margin-top: 30px; }
 }
 
-/* --- FOTO COLLAGE (Das Überlappen) --- */
+/* --- COLLAGE --- */
 .photo-collage {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  height: 400px; /* Platzhalterhöhe für die absolute Positionierung */
+  height: 400px;
   margin-bottom: 20px;
 
-  @media (max-width: 768px) {
-    height: 650px;
-  }
+  @media (max-width: 768px) { height: 650px; }
 
   .polaroid {
-    width: 280px;
-    position: absolute; /* Wichtig für Überlappung */
+    width: 380px; /* Größer */
+    position: absolute;
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     
-    @media (max-width: 768px) {
-      width: 75%;
-    }
+    @media (max-width: 768px) { width: 75%; }
   }
 
   .img-left {
-    left: 10%; /* Sitzt links */
+    left: 10%;
     transform: rotate(-5deg);
-    z-index: 1; /* Liegt unten */
+    z-index: 1;
     
     @media (max-width: 768px) {
-      left: 50%;
-      top: 0;
+      left: 50%; top: 0;
       transform: translateX(-50%) rotate(-3deg);
     }
   }
 
   .img-right {
-    right: 10%; /* Sitzt rechts */
+    right: 10%;
     transform: rotate(4deg);
-    z-index: 2; /* Liegt oben drauf */
-    top: 50px; /* Etwas tiefer versetzt */
+    z-index: 2;
+    top: 50px;
     
     @media (max-width: 768px) {
-      right: auto;
-      left: 18%;
-      top: 280px;
+      right: auto; left: 50%; top: 320px;
+      transform: translateX(-50%) rotate(3deg);
     }
   }
 }

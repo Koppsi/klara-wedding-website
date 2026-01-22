@@ -4,7 +4,8 @@
     "INTRO_TEXT": "We cordially invite you to our wedding at the Klausenhof..."
   },
   "HERO": {
-    "DATE": "Saturday, September 12, 2026"
+    "DATE": "Saturday, September 12, 2026",
+    "SUBTITLE": "We're getting married!"
   },
   "HEADER": {
     "MENU_HOME": "Home",
@@ -24,5 +25,28 @@
     "MAILING_ADDRESS": "Mailing Address",
     "DAY_OF": "Day-of Contact",
     "DAY_OF_SUB": "Please call our lovely maid of honor for urgent matters on the wedding day."
+  },
+  "FAQS": {
+    "TITLE": "Q & A",
+    "INTRO": "Here are some answers to the questions we think you might have. If we missed something, just let us know!",
+    "STILL_QUESTIONS": "Still have questions?",
+    
+    "Q_RSVP_DEADLINE": "When is the RSVP deadline?",
+    "A_RSVP_DEADLINE": "Please let us know if you can make it by June 1st, 2026. This helps us plan the food and seating!",
+    
+    "Q_DRESSCODE": "What is the dress code?",
+    "A_DRESSCODE": "We’d love to see our family and friends get dressed up with us! The dress code is semi-formal / cocktail attire.",
+    
+    "Q_PLUS_ONE": "Can I bring a plus one?",
+    "A_PLUS_ONE": "Our goal is to keep our very special day as intimate as possible, we are choosing to celebrate with only our closest family and friends. Thank you for respecting our wishes.",
+    
+    "Q_KIDS": "Are children welcome?",
+    "A_KIDS": "We love your little ones! However, we have decided to keep our wedding and reception an adults-only event.",
+    
+    "Q_GIFTS": "Do you have a registry?",
+    "A_GIFTS": "Your presence is present enough! But if you would like to give a gift, a contribution to our honeymoon fund would be appreciated.",
+
+    "Q_TRANSPORT": "Is there parking available?",
+    "A_TRANSPORT": "Yes, the venue has a large parking lot. You can leave your car there overnight if you decide to take a taxi home."
   }
 }

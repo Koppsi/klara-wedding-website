@@ -45,7 +45,7 @@
     font-family: var(--font-serif);
     font-size: 1.3rem;
     margin: 0;
-    color: var(--color-text);
+    color: var(--color-text-dark);
     transition: color 0.3s;
     padding-right: 20px;
   }
@@ -62,7 +62,7 @@
   &::before, &::after {
     content: '';
     position: absolute;
-    background-color: #ccc; /* Standard Grau */
+    background-color: var(--color-accent-dark); /* Standard Grau */
     transition: transform 0.3s ease, background-color 0.3s;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%);
@@ -107,7 +107,7 @@
       margin: 0;
       font-family: var(--font-sans);
       line-height: 1.7;
-      color: var(--color-text-light);
+      color: var(--color-text-dark);
     }
   }
 }
@@ -119,7 +119,7 @@
   color: var(--color-text-light);
   
   a {
-    color: var(--color-text);
+    color: var(--color-text-dark);
     text-decoration: underline;
     font-weight: bold;
     &:hover { color: var(--color-gold); }
