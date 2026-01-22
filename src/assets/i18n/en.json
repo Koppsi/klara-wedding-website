@@ -14,8 +14,24 @@
   },
   "RSVP": {
     "TITLE": "Where the Wild Things Wed",
-    "TEXT_TOP": "We met at an art walk in Seattle, literally bumping into each other...",
-    "TEXT_BOTTOM": "It feels right to celebrate surrounded by the people who get us..."
+    "TEXT_TOP": "We met at an art walk...",
+    "TEXT_BOTTOM": "It feels right to celebrate...",
+    
+    "LABEL_NAME": "Name(s)",
+    "LABEL_ATTENDING": "Will you be attending?",
+    "OPTION_YES": "Joyfully Accept",
+    "OPTION_NO": "Regretfully Decline",
+    "LABEL_COUNT": "Number of Guests",
+    "LABEL_DIET": "Dietary Restrictions",
+    "PLACEHOLDER_DIET": "Vegetarian, Gluten-free, allergies...",
+    "LABEL_SONG": "I promise to dance if you play:",
+    "PLACEHOLDER_SONG": "Artist - Song Name",
+    "LABEL_MESSAGE": "Leave a note for the couple",
+    "BUTTON_SEND": "Send RSVP",
+    
+    "ERROR_REQUIRED": "This field is required",
+    "SUCCESS_TITLE": "Thank You!",
+    "SUCCESS_TEXT": "Your RSVP has been sent. We can't wait to see you!"
   },
   "CONTACT": {
     "TITLE": "Get in Touch",

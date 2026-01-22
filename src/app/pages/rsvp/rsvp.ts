@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
+import { RsvpForm } from '../../components/rsvp-form/rsvp-form';
 
 @Component({
   selector: 'app-rsvp',
-  imports: [CommonModule, TranslateModule],
+  imports: [CommonModule, TranslateModule, RsvpForm],
   templateUrl: './rsvp.html',
   styleUrl: './rsvp.scss',
 })

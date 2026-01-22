@@ -1,5 +1,5 @@
 <div class="hero-section">
-  <div class="hero-overlay">
+  <div class="hero-overlay" appFadeIn>
     <p class="subtitle">{{ 'HERO.SUBTITLE' | translate }}</p>
     <h1 class="date">{{ 'HERO.DATE' | translate }}</h1>
   </div>
@@ -7,24 +7,24 @@
 
 <div class="container-centered grid-2-cols mt-4">
   
-  <a routerLink="/details" class="hover-tile tile-details">
+  <a routerLink="/details" class="hover-tile tile-details" appFadeIn>
     <div class="tile-content">
       <span>{{ 'HEADER.MENU_DETAILS' | translate }}</span>
     </div>
   </a>
 
-  <a routerLink="/rsvp" class="hover-tile tile-rsvp">
+  <a routerLink="/rsvp" class="hover-tile tile-rsvp delay-200" appFadeIn>
     <div class="tile-content">
       <span>{{ 'HEADER.MENU_RSVP' | translate }}</span>
     </div>
   </a>
 
-  <a routerLink="/contact" class="hover-tile tile-contact">
+  <a routerLink="/contact" class="hover-tile tile-contact" appFadeIn>
     <div class="tile-content">
       <span>Contact</span> </div>
   </a>
 
-  <a routerLink="/faqs" class="hover-tile tile-faq">
+  <a routerLink="/faqs" class="hover-tile tile-faq delay-200" appFadeIn>
     <div class="tile-content">
       <span>FAQ</span>
     </div>

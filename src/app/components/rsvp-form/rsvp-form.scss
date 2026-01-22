@@ -1,0 +1,116 @@
+.rsvp-form-container {
+  background-color: var(--color-white); /* Oder var(--color-rosa) für Kontrast? */
+  /* Wenn du es in der rsvp-page einbettest, ist weiß auf dem Hintergrund gut */
+  padding: 40px;
+  border-radius: var(--border-radius-soft);
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05); /* Sehr zarter Schatten */
+}
+
+/* --- SUCCESS MESSAGE --- */
+.success-message {
+  text-align: center;
+  padding: 40px 0;
+  
+  h2 {
+    color: var(--color-green);
+    font-family: var(--font-serif);
+    margin-bottom: 15px;
+  }
+  p {
+    font-family: var(--font-sans);
+    font-size: 1.1rem;
+  }
+}
+
+/* --- FORM STYLES --- */
+.form-group {
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+
+  label {
+    font-family: var(--font-serif);
+    color: var(--color-accent-dark);
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 1rem;
+  }
+
+  /* Elegante Inputs: Nur Linie unten */
+  input[type="text"], 
+  textarea, 
+  select {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    color: var(--color-text-dark);
+    border-radius: 0; /* Wichtig für Safari */
+    transition: border-color 0.3s;
+
+    &:focus {
+      outline: none;
+      border-bottom-color: var(--color-gold);
+    }
+    
+    &::placeholder {
+      color: #ccc;
+      font-style: italic;
+    }
+  }
+
+  .error {
+    color: var(--color-red);
+    font-size: 0.8rem;
+    margin-top: 5px;
+  }
+}
+
+/* --- RADIO BUTTONS (JA / NEIN) --- */
+.radio-group {
+  .radio-options {
+    display: flex;
+    gap: 30px;
+    margin-top: 5px;
+  }
+
+  .radio-label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-family: var(--font-sans);
+    
+    input {
+      margin-right: 10px;
+      accent-color: var(--color-gold); /* Färbt den Radio Button gold */
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
+
+.button-wrapper {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* --- ANIMATION für die Zusatzfelder --- */
+.slide-in {
+  animation: slideDown 0.4s ease-out forwards;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Mobile Anpassung */
+@media (max-width: 768px) {
+  .rsvp-form-container {
+    padding: 20px;
+  }
+}

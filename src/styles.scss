@@ -95,6 +95,7 @@ h1, h2, h3, .serif-font {
   overflow: hidden;
   text-decoration: none;
   transition: transform 0.3s ease;
+  height: 400px;
 
   &:hover > .tile-content, 
   &:hover > * {
@@ -147,3 +148,24 @@ h1, h2, h3, .serif-font {
     opacity: 0.9;
   }
 }
+
+/* --- SCROLL ANIMATIONS --- */
+
+/* Startzustand: Unsichtbar und etwas weiter unten */
+.reveal-hidden {
+  opacity: 0;
+  transform: translateY(30px); /* 30px nach unten verschoben */
+  transition: all 0.8s ease-out; /* Dauer der Animation */
+  will-change: opacity, transform; /* Performance Optimierung */
+}
+
+/* Endzustand: Sichtbar und an Originalposition */
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Optional: Verzögerungen für Gruppen (z.B. im Grid) */
+.delay-100 { transition-delay: 0.1s; }
+.delay-200 { transition-delay: 0.2s; }
+.delay-300 { transition-delay: 0.3s; }

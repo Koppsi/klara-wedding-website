@@ -14,8 +14,24 @@
   },
   "RSVP": {
     "TITLE": "Where the Wild Things Wed",
-    "TEXT_TOP": "We met at an art walk in Seattle, literally bumping into each other...",
-    "TEXT_BOTTOM": "It feels right to celebrate surrounded by the people who get us..."
+    "TEXT_TOP": "Wir haben uns getroffen...",
+    "TEXT_BOTTOM": "Es fühlt sich richtig an...",
+    
+    "LABEL_NAME": "Name(n)",
+    "LABEL_ATTENDING": "Werdet ihr dabei sein?",
+    "OPTION_YES": "Wir kommen gerne",
+    "OPTION_NO": "Wir müssen leider absagen",
+    "LABEL_COUNT": "Anzahl Personen",
+    "LABEL_DIET": "Essenswünsche / Allergien",
+    "PLACEHOLDER_DIET": "Vegetarisch, Glutenfrei, Nüsse...",
+    "LABEL_SONG": "Ich tanze garantiert bei:",
+    "PLACEHOLDER_SONG": "Interpret - Songtitel",
+    "LABEL_MESSAGE": "Nachricht an uns",
+    "BUTTON_SEND": "Absenden",
+    
+    "ERROR_REQUIRED": "Dieses Feld ist Pflicht",
+    "SUCCESS_TITLE": "Danke!",
+    "SUCCESS_TEXT": "Eure Antwort ist angekommen. Wir freuen uns auf euch!"
   },
   "CONTACT": {
     "TITLE": "Kontakt",
