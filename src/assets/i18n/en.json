@@ -1,4 +1,7 @@
 {
+  "HOME": {
+    "SUBTITLE": "WE ARE GETTING MARRIED"
+  },
   "DETAILS": {
     "TITLE": "The Details",
     "INTRO_TEXT": "We cordially invite you to our wedding at the Klausenhof..."
@@ -64,5 +67,11 @@
 
     "Q_TRANSPORT": "Is there parking available?",
     "A_TRANSPORT": "Yes, the venue has a large parking lot. You can leave your car there overnight if you decide to take a taxi home."
+  },
+  "COUNTDOWN": {
+    "DAYS": "Days",
+    "HOURS": "Hours",
+    "MINUTES": "Mins",
+    "SECONDS": "Secs"
   }
 }

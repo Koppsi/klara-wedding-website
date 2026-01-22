@@ -102,3 +102,32 @@
 .tile-rsvp    { background-image: url('/assets/img/Link card 2.png'); }
 .tile-contact { background-image: url('/assets/img/Link card 3.png'); }
 .tile-faq     { background-image: url('/assets/img/Link card 4.png'); }
+
+/* --- COUNTDOWN BANNER --- */
+.countdown-wrapper {
+  background-color: var(--color-accent-dark); /* Dein dunkles Taupe/Braun */
+  padding: 80px 20px; /* Viel Platz oben/unten */
+  text-align: center;
+  margin-top: 60px; /* Abstand zu den Kacheln */
+  margin-bottom: 60px; /* Abstand zum Footer */
+  
+  /* Optional: Runde Ecken oder volle Breite? */
+  /* Wenn du volle Breite willst, lass border-radius weg. */
+  /* Wenn es wie eine Karte aussehen soll: */
+  /* border-radius: 8px; max-width: 1200px; margin-left: auto; margin-right: auto; */
+}
+
+.countdown-title {
+  color: var(--color-gold); /* Goldene Überschrift */
+  font-family: var(--font-script); /* Die Schnörkelschrift sieht hier toll aus! */
+  font-size: 3.5rem; /* Schön groß */
+  margin-bottom: 40px; /* Abstand zu den Zahlen */
+  font-weight: 400;
+}
+
+/* Mobile Anpassung */
+@media (max-width: 768px) {
+  .countdown-title {
+    font-size: 2.5rem;
+  }
+}

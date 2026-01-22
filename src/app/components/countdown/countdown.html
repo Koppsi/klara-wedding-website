@@ -1,0 +1,29 @@
+<div class="countdown-container">
+  
+  <div class="time-block">
+    <span class="number">{{ days() }}</span>
+    <span class="label">{{ 'COUNTDOWN.DAYS' | translate }}</span>
+  </div>
+
+  <div class="separator">:</div>
+
+  <div class="time-block">
+    <span class="number">{{ hours() }}</span>
+    <span class="label">{{ 'COUNTDOWN.HOURS' | translate }}</span>
+  </div>
+
+  <div class="separator">:</div>
+
+  <div class="time-block">
+    <span class="number">{{ minutes() }}</span>
+    <span class="label">{{ 'COUNTDOWN.MINUTES' | translate }}</span>
+  </div>
+
+  <div class="separator mobile-hide">:</div>
+
+  <div class="time-block mobile-hide">
+    <span class="number">{{ seconds() }}</span>
+    <span class="label">{{ 'COUNTDOWN.SECONDS' | translate }}</span>
+  </div>
+
+</div>
