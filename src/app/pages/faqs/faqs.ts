@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
+import { WeddingGame } from '../../components/wedding-game/wedding-game';
 
 @Component({
   selector: 'app-faqs',
-  imports: [CommonModule, TranslateModule],
+  imports: [CommonModule, TranslateModule, WeddingGame],
   templateUrl: './faqs.html',
   styleUrl: './faqs.scss',
 })
@@ -26,5 +27,18 @@ export class Faqs {
 
     // Option B: Mehrere gleichzeitig offen (einfacher Toggle) -> Wir nehmen das hier
     this.faqItems[index].isOpen = !this.faqItems[index].isOpen;
+  }
+
+  showGame = false;
+
+  openGameModal() {
+    this.showGame = true;
+    // Optional: Scrollen der Hauptseite verhindern, während Modal offen ist
+    document.body.style.overflow = 'hidden';
+  }
+
+  closeGameModal() {
+    this.showGame = false;
+    document.body.style.overflow = 'auto';
   }
 }

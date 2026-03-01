@@ -1,0 +1,24 @@
+<div class="game-container">
+  
+  <div class="hud">
+    <span>Score: {{ score() }}</span>
+    <span>High Score: {{ highScore() }}</span>
+  </div>
+
+  <canvas #gameCanvas></canvas>
+
+  @if (!isPlaying()) {
+    <div class="overlay">
+      @if (isGameOver()) {
+        <h2>Oje! Hingefallen!</h2>
+        <p>Score: {{ score() }}</p>
+        <button class="btn-primary" (click)="startGame()">Nochmal versuchen</button>
+      } @else {
+        <h2>Wedding Run</h2>
+        <p>Hüpf zur Hochzeit!</p>
+        <p class="instruction">Leertaste oder Tippen zum Springen</p>
+        <button class="btn-primary" (click)="startGame()">Start</button>
+      }
+    </div>
+  }
+</div>

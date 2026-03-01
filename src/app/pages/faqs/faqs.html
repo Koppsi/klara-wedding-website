@@ -30,7 +30,27 @@
   </div>
 
   <div class="still-questions">
-    <p>{{ 'FAQS.STILL_QUESTIONS' | translate }} <a href="/contact">Contact us</a></p>
+    <p>
+      {{ 'FAQS.STILL_QUESTIONS' | translate }} 
+      <a href="/contact">Contact us</a>
+    </p>
+
+    <div class="bored-section">
+      <span class="hint">Oder einfach nur Langeweile?</span>
+      <button (click)="openGameModal()" class="game-trigger-btn" title="Start Wedding Run">
+        🎮 Spiel starten
+      </button>
+    </div>
   </div>
 
-</div>
+</div> @if (showGame) {
+  <div class="game-modal-backdrop" (click)="closeGameModal()">
+    <div class="game-modal-content" (click)="$event.stopPropagation()">
+      
+      <button class="close-modal-btn" (click)="closeGameModal()">×</button>
+      
+      <app-wedding-game></app-wedding-game>
+      
+    </div>
+  </div>
+}
