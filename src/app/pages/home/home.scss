@@ -3,7 +3,7 @@
   position: relative;
   height: 80vh;
   width: 100%;
-  background-image: url('/assets/img/image.png'); 
+  background-image: url('/assets/img/Ring.JPEG');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -98,10 +98,10 @@
 }
 
 /* Bild-Zuordnungen */
-.tile-details { background-image: url('/assets/img/Link card 1.png'); }
-.tile-rsvp    { background-image: url('/assets/img/Link card 2.png'); }
-.tile-contact { background-image: url('/assets/img/Link card 3.png'); }
-.tile-faq     { background-image: url('/assets/img/Link card 4.png'); }
+.tile-details { background-image: url('/assets/img/Ahri.jpg'); }
+.tile-rsvp    { background-image: url('/assets/img/Airplane.JPEG'); }
+.tile-contact { background-image: url('/assets/img/Shaun&Klara_WeddingC&C.JPEG'); }
+.tile-faq     { background-image: url('/assets/img/Ahri.jpg'); }
 
 /* --- COUNTDOWN BANNER --- */
 .countdown-wrapper {
