@@ -4,7 +4,7 @@
   },
   "DETAILS": {
     "TITLE": "Die Details",
-    "INTRO_TEXT": "Wir laden euch herzlich zu unserer Hochzeit auf den Klausenhof ein..."
+    "INTRO_TEXT": "Wir laden euch herzlich zu unserer Hochzeit auf den Klausenbauernhof ein..."
   },
   "HERO": {
     "DATE": "Samstag, 12. September 2026",
@@ -16,9 +16,9 @@
     "MENU_RSVP": "RSVP"
   },
   "RSVP": {
-    "TITLE": "Where the Wild Things Wed",
-    "TEXT_TOP": "Wir haben uns getroffen...",
-    "TEXT_BOTTOM": "Es fühlt sich richtig an...",
+    "TITLE": "Wir freuen uns sehr auf euch!",
+    "TEXT_TOP": "Da wir im kleineren Kreis feiern möchten, können wir leider keine Plus Ones ermöglichen.",
+    "TEXT_BOTTOM": "Kinder sind aber herzlich willkommen.",
     
     "LABEL_NAME": "Name(n)",
     "LABEL_ATTENDING": "Werdet ihr dabei sein?",
@@ -26,7 +26,7 @@
     "OPTION_NO": "Wir müssen leider absagen",
     "LABEL_COUNT": "Anzahl Personen",
     "LABEL_DIET": "Essenswünsche / Allergien",
-    "PLACEHOLDER_DIET": "Vegetarisch, Glutenfrei, Nüsse...",
+    "PLACEHOLDER_DIET": "Vegan, Glutenfrei, Nüsse...",
     "LABEL_SONG": "Ich tanze garantiert bei:",
     "PLACEHOLDER_SONG": "Interpret - Songtitel",
     "LABEL_MESSAGE": "Nachricht an uns",
@@ -54,19 +54,19 @@
     "A_RSVP_DEADLINE": "Bitte gebt uns bis zum 1. Juni 2026 Bescheid, damit wir das Essen und die Sitzordnung planen können.",
     
     "Q_DRESSCODE": "Gibt es einen Dresscode?",
-    "A_DRESSCODE": "Wir würden uns freuen, wenn ihr euch mit uns schick macht! Der Dresscode ist festlich-elegant (Cocktail).",
+    "A_DRESSCODE": "Wir würden uns freuen, wenn ihr euch mit uns schick macht! Der Dresscode ist sommerlich-schick. Bitte bedenkt aber, dass der Klausenbauernhof ein alter Bauernhof ist, von High Heels mit dünnen Absätzen würden wir eher abraten.",
     
     "Q_PLUS_ONE": "Kann ich eine Begleitung mitbringen?",
-    "A_PLUS_ONE": "Wir möchten unseren Tag im engsten Kreis feiern. Daher bitten wir um Verständnis, dass nur die auf der Einladung genannten Personen eingeladen sind.",
+    "A_PLUS_ONE": "Wir möchten den Tag im kleineren Kreis feiern. Daher bitten wir um Verständnis, dass nur die auf der Einladung genannten Personen eingeladen sind.",
     
     "Q_KIDS": "Sind Kinder eingeladen?",
-    "A_KIDS": "Wir lieben eure Kinder! Wir haben uns jedoch entschieden, die Feier als reines Erwachsenen-Fest zu gestalten.",
+    "A_KIDS": "Ja!",
     
     "Q_GIFTS": "Habt ihr eine Geschenkeliste?",
-    "A_GIFTS": "Eure Anwesenheit ist das größte Geschenk! Wer uns dennoch etwas schenken möchte: Über einen Beitrag zu unseren Flitterwochen würden wir uns sehr freuen.",
+    "A_GIFTS": "Über einen Beitrag zu unseren Flitterwochen würden wir uns sehr freuen.",
     
     "Q_TRANSPORT": "Gibt es Parkplätze?",
-    "A_TRANSPORT": "Ja, direkt am Klausenhof gibt es ausreichend Parkmöglichkeiten. Autos können dort auch über Nacht stehen bleiben."
+    "A_TRANSPORT": "Ja, direkt am Klausenbauernhof gibt es Parkmöglichkeiten. Autos können dort auch über Nacht stehen bleiben."
   },
   "COUNTDOWN": {
     "DAYS": "Tage",
