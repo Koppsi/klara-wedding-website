@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-faqs',
-  imports: [CommonModule, TranslateModule],
+  imports: [CommonModule, TranslateModule, RouterModule],
   templateUrl: './faqs.html',
   styleUrl: './faqs.scss',
 })
@@ -16,6 +17,7 @@ export class Faqs {
     { question: 'FAQS.Q_KIDS', answer: 'FAQS.A_KIDS', isOpen: false },
     { question: 'FAQS.Q_GIFTS', answer: 'FAQS.A_GIFTS', isOpen: false },
     { question: 'FAQS.Q_TRANSPORT', answer: 'FAQS.A_TRANSPORT', isOpen: false },
+    { question: 'FAQS.Q_ACCOMODATION', answer: 'FAQS.A_ACCOMODATION', isOpen: false },
   ];
 
   toggleFaq(index: number) {

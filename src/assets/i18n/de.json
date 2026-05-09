@@ -4,7 +4,17 @@
   },
   "DETAILS": {
     "TITLE": "Die Details",
-    "INTRO_TEXT": "Wir laden euch herzlich zu unserer Hochzeit auf den Klausenhof ein..."
+    "INTRO_TEXT": "Wir laden euch herzlich zu unserer Hochzeit auf den Klausenbauernhof ein...",
+    "LABEL_DATE": "Datum",
+    "LABEL_VENUE": "Ort",
+    "VENUE_NAME": "Klausenbauernhof, Wolfach, Schwarzwald",
+    "LABEL_ARRIVAL": "Ankunft",
+    "ARRIVAL_TIME": "wird noch bekannt gegeben",
+    "LABEL_RECEPTION": "Feier",
+    "RECEPTION_TIME": "18:00 Uhr - Open End",
+    "TRAVEL_TITLE": "Anreise & Unterkunft",
+    "TRAVEL_INFO": "Wir haben den Klausenbauernhof von Freitagabend - Sonntagmorgen gemietet - wer möchte, kann gerne früher kommen oder bis Sonntag bleiben.<br><br>In der Umgebung gibt es einige schöne Hotels und Ferienwohnungen. Der Klausenbauernhof bietet zudem die Möglichkeit, im eigenen Camper zu übernachten oder ein Zelt aufzuschlagen.",
+    "BLACK_FOREST_INFO": "Der Schwarzwald ist ein idealer Ort, um ein paar Tage zum Wandern, Mountainbiken oder für Wellness-Besuche dranzuhängen."
   },
   "HERO": {
     "DATE": "Samstag, 12. September 2026",
@@ -16,9 +26,9 @@
     "MENU_RSVP": "RSVP"
   },
   "RSVP": {
-    "TITLE": "Where the Wild Things Wed",
-    "TEXT_TOP": "Wir haben uns getroffen...",
-    "TEXT_BOTTOM": "Es fühlt sich richtig an...",
+    "TITLE": "Wir freuen uns sehr auf euch!",
+    "TEXT_TOP": "Bitte gebt uns bis zum 31. Juli Bescheid, ob ihr kommen könnt.",
+    "TEXT_BOTTOM": "Ihr möchtet gerne schon Freitagabend mit uns verbringen oder am Sonntag zum Frühstück bleiben? Dann schreibt dies bitte in eure RSVP.",
     
     "LABEL_NAME": "Name(n)",
     "LABEL_ATTENDING": "Werdet ihr dabei sein?",
@@ -26,7 +36,7 @@
     "OPTION_NO": "Wir müssen leider absagen",
     "LABEL_COUNT": "Anzahl Personen",
     "LABEL_DIET": "Essenswünsche / Allergien",
-    "PLACEHOLDER_DIET": "Vegetarisch, Glutenfrei, Nüsse...",
+    "PLACEHOLDER_DIET": "Vegan, Glutenfrei, Nüsse...",
     "LABEL_SONG": "Ich tanze garantiert bei:",
     "PLACEHOLDER_SONG": "Interpret - Songtitel",
     "LABEL_MESSAGE": "Nachricht an uns",
@@ -51,22 +61,25 @@
     "STILL_QUESTIONS": "Noch Fragen offen?",
 
     "Q_RSVP_DEADLINE": "Bis wann sollen wir zusagen?",
-    "A_RSVP_DEADLINE": "Bitte gebt uns bis zum 1. Juni 2026 Bescheid, damit wir das Essen und die Sitzordnung planen können.",
+    "A_RSVP_DEADLINE": "Bitte gebt uns bis zum 31. Juli 2026 Bescheid, damit wir das Essen und die Sitzordnung planen können.",
     
     "Q_DRESSCODE": "Gibt es einen Dresscode?",
-    "A_DRESSCODE": "Wir würden uns freuen, wenn ihr euch mit uns schick macht! Der Dresscode ist festlich-elegant (Cocktail).",
+    "A_DRESSCODE": "Wir würden uns freuen, wenn ihr euch mit uns schick macht! Der Dresscode ist sommerlich-schick - gerne mit bunten Farben! Bitte bedenkt aber, dass der Klausenbauernhof ein alter Bauernhof ist, von High Heels mit dünnen Absätzen würden wir eher abraten.",
     
     "Q_PLUS_ONE": "Kann ich eine Begleitung mitbringen?",
-    "A_PLUS_ONE": "Wir möchten unseren Tag im engsten Kreis feiern. Daher bitten wir um Verständnis, dass nur die auf der Einladung genannten Personen eingeladen sind.",
+    "A_PLUS_ONE": "Wir möchten den Tag im kleineren Kreis feiern. Daher bitten wir um Verständnis, dass wir keine Plus Ones ermöglichen können.",
     
     "Q_KIDS": "Sind Kinder eingeladen?",
-    "A_KIDS": "Wir lieben eure Kinder! Wir haben uns jedoch entschieden, die Feier als reines Erwachsenen-Fest zu gestalten.",
+    "A_KIDS": "Ja! Wir freuen uns auf eure Kleinen - bitte sagt uns in eurer RSVP Bescheid.",
     
     "Q_GIFTS": "Habt ihr eine Geschenkeliste?",
-    "A_GIFTS": "Eure Anwesenheit ist das größte Geschenk! Wer uns dennoch etwas schenken möchte: Über einen Beitrag zu unseren Flitterwochen würden wir uns sehr freuen.",
+    "A_GIFTS": "Über einen Beitrag zur Hochzeitskasse würden wir uns sehr freuen.",
     
     "Q_TRANSPORT": "Gibt es Parkplätze?",
-    "A_TRANSPORT": "Ja, direkt am Klausenhof gibt es ausreichend Parkmöglichkeiten. Autos können dort auch über Nacht stehen bleiben."
+    "A_TRANSPORT": "Ja, direkt am Klausenbauernhof gibt es Parkmöglichkeiten. Autos können dort auch über Nacht stehen bleiben.",
+   
+    "Q_ACCOMODATION": "Gibt es Schlafplätze vor Ort?",
+    "A_ACCOMODATION": "Ja, es gibt einzelne Räume, die für unsere Gäste bereitstehen. Diese sind aber First Come, First Serve. Zusätzlich gibt es auch Stellplätze für eure Camper, Dachzelte oder auch reguläre Zelte. Gebt uns bitte bald Bescheid, wenn ihr plant, vor Ort zu übernachten."
   },
   "COUNTDOWN": {
     "DAYS": "Tage",

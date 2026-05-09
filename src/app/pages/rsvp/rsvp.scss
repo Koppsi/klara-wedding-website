@@ -47,7 +47,7 @@
 }
 
 .bottom-block {
-  margin-top: 50px;
+  margin-top: 170px;
   .btn-primary { margin-top: 30px; }
 }
 
@@ -57,38 +57,43 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  height: 400px;
-  margin-bottom: 20px;
+  height: 500px; /* Erhöht, um Platz für die Verschiebung zu schaffen */
+  margin: 40px auto;
 
-  @media (max-width: 768px) { height: 650px; }
+  @media (max-width: 768px) { 
+    height: 750px; /* Genug Platz für Mobile, damit kein Text überlagert wird */
+  }
 
   .polaroid {
-    width: 380px; /* Größer */
+    width: 340px; /* Breite leicht reduziert für bessere Balance */
     position: absolute;
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     
-    @media (max-width: 768px) { width: 75%; }
+    @media (max-width: 768px) { width: 85%; }
   }
 
   .img-left {
-    left: 10%;
+    left: 5%; /* Weiter nach außen geschoben */
     transform: rotate(-5deg);
     z-index: 1;
     
     @media (max-width: 768px) {
-      left: 50%; top: 0;
+      left: 48%; 
+      top: 0;
       transform: translateX(-50%) rotate(-3deg);
     }
   }
 
   .img-right {
-    right: 10%;
+    right: 5%; /* Weiter nach außen geschoben */
     transform: rotate(4deg);
     z-index: 2;
-    top: 50px;
+    top: 80px; /* Weniger vertikale Überlappung */
     
     @media (max-width: 768px) {
-      right: auto; left: 50%; top: 320px;
+      right: auto; 
+      left: 52%; 
+      top: 400px;
       transform: translateX(-50%) rotate(3deg);
     }
   }
