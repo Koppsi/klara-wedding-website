@@ -45,6 +45,7 @@
     "@angular/compiler-cli": "^21.1.0",
     "@types/aos": "^3.0.7",
     "@types/jasmine": "~5.1.0",
+    "angular-cli-ghpages": "^3.0.3",
     "baseline-browser-mapping": "^2.10.21",
     "jasmine-core": "~5.9.0",
     "karma": "~6.4.0",
