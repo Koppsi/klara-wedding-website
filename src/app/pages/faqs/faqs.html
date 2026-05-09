@@ -4,11 +4,14 @@
   </div>
 </div>
 
-<div class="container-centered faq-container">
-  
-  <div class="intro-text">
+<div class="container-centered">
+  <div class="intro-box">
     <p>{{ 'FAQS.INTRO' | translate }}</p>
+    <div class="separator-line"></div>
   </div>
+</div>
+
+<div class="container-centered faq-container">
 
   <div class="faq-list">
     @for (item of faqItems; track $index) {
@@ -30,7 +33,7 @@
   </div>
 
   <div class="still-questions">
-    <p>{{ 'FAQS.STILL_QUESTIONS' | translate }} <a href="/contact">Contact us</a></p>
+    <p>{{ 'FAQS.STILL_QUESTIONS' | translate }} <a routerLink="/contact">{{ 'CONTACT.TITLE' | translate }}</a></p>
   </div>
 
 </div>

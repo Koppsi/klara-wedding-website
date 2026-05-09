@@ -5,7 +5,7 @@ import { FadeIn } from '../../directives/fade-in';
 
 @Component({
   selector: 'app-details',
-  imports: [CommonModule, TranslateModule, FadeIn],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './details.html',
   styleUrl: './details.scss',
 })

@@ -4,11 +4,21 @@
   },
   "DETAILS": {
     "TITLE": "The Details",
-    "INTRO_TEXT": "We joyfully invite you to our wedding at the Klausenhof..."
+    "INTRO_TEXT": "We joyfully invite you to our wedding at the Klausenbauernhof...",
+    "LABEL_DATE": "Date",
+    "LABEL_VENUE": "Venue",
+    "VENUE_NAME": "Klausenbauernhof, Wolfach, Black Forest",
+    "LABEL_ARRIVAL": "Arrival",
+    "ARRIVAL_TIME": "to be announced",
+    "LABEL_RECEPTION": "Reception",
+    "RECEPTION_TIME": "6:00 PM - Open End",
+    "TRAVEL_TITLE": "Travel & Stay",
+    "TRAVEL_INFO": "We have rented the venue for the whole weekend. You are more than welcome to arrive Friday evening or stay until Sunday morning. <br><br> There are some lovely hotels and apartments in the area. The Klausenbauernhof also offers the possibility to sleep in your own van or set up your tent.",
+    "BLACK_FOREST_INFO": "The Black Forest is a great place to add a few days for hiking, mountain biking or spas."
   },
   "HERO": {
     "DATE": "Saturday, September 12, 2026",
-    "SUBTITLE": "We're getting!"
+    "SUBTITLE": "We're getting married!"
   },
   "HEADER": {
     "MENU_HOME": "Home",
@@ -16,9 +26,9 @@
     "MENU_RSVP": "RSVP"
   },
   "RSVP": {
-    "TITLE": "Where the Wild Things Wed",
-    "TEXT_TOP": "We met at an art walk...",
-    "TEXT_BOTTOM": "It feels right to celebrate...",
+    "TITLE": "We are so excited to celebrate with you!",
+    "TEXT_TOP": "Please let us know if you can make it by July 31st, 2026.",
+    "TEXT_BOTTOM": "You would like to arrive Friday evening or stay for breakfast on Sunday? Please leave a note in your RSVP.",
     
     "LABEL_NAME": "Name(s)",
     "LABEL_ATTENDING": "Will you be attending?",
@@ -26,7 +36,7 @@
     "OPTION_NO": "Regretfully Decline",
     "LABEL_COUNT": "Number of Guests",
     "LABEL_DIET": "Dietary Restrictions",
-    "PLACEHOLDER_DIET": "Vegetarian, Gluten-free, allergies...",
+    "PLACEHOLDER_DIET": "Vegan, Gluten-free, allergies...",
     "LABEL_SONG": "I promise to dance if you play:",
     "PLACEHOLDER_SONG": "Artist - Song Name",
     "LABEL_MESSAGE": "Leave a note for the couple",
@@ -51,22 +61,26 @@
     "STILL_QUESTIONS": "Still have questions?",
     
     "Q_RSVP_DEADLINE": "When is the RSVP deadline?",
-    "A_RSVP_DEADLINE": "Please let us know if you can make it by June 1st, 2026. This helps us plan the food and seating!",
+    "A_RSVP_DEADLINE": "Please let us know if you can make it by July 31st, 2026. This helps us plan the food and seating!",
     
     "Q_DRESSCODE": "What is the dress code?",
-    "A_DRESSCODE": "We’d love to see our family and friends get dressed up with us! The dress code is semi-formal / cocktail attire.",
+    "A_DRESSCODE": "We'd love to see our family and friends get dressed up with us! The dress code is summer-chique - we'd love to see some colours! Please keep in mind that the Klausenbauernhof is an old farm. We'd suggest not wearing your thinnest heels.",
     
     "Q_PLUS_ONE": "Can I bring a plus one?",
-    "A_PLUS_ONE": "Our goal is to keep our very special day as intimate as possible, we are choosing to celebrate with only our closest family and friends. Thank you for respecting our wishes.",
+    "A_PLUS_ONE": "Our goal is to keep the day as intimate as possible. We can therefore unfortunately not accomodate a plus one.",
     
     "Q_KIDS": "Are children welcome?",
-    "A_KIDS": "We love your little ones! However, we have decided to keep our wedding and reception an adults-only event.",
+    "A_KIDS": "Yes, we love your little ones! Please put a note in the RSVP so we can plan accordingly.",
     
     "Q_GIFTS": "Do you have a registry?",
-    "A_GIFTS": "Your presence is present enough! But if you would like to give a gift, a contribution to our honeymoon fund would be appreciated.",
+    "A_GIFTS": "A contribution to our honeymoon fund would be appreciated.",
 
     "Q_TRANSPORT": "Is there parking available?",
-    "A_TRANSPORT": "Yes, the venue has a large parking lot. You can leave your car there overnight if you decide to take a taxi home."
+    "A_TRANSPORT": "Yes, the venue has some parking spots. You can leave your car there overnight if you decide to take a taxi home.",
+
+    "Q_ACCOMODATION": "Can we sleep at the venue?",
+    "A_ACCOMODATION": "Yes, the venue offers some sleeping spots. Some rooms are available but they are first come, first serve. There are also spaces for your camping-vans or tents. Please let us know, if you're planning to stay at the venue."
+
   },
   "COUNTDOWN": {
     "DAYS": "Days",

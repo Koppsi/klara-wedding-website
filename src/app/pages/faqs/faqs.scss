@@ -1,8 +1,8 @@
 /* Spezifisches Hero Bild */
 .faq-hero {
   /* Nimm hier ein eher abstraktes Bild oder Detailaufnahme */
-  background-image: url('/assets/img/Link card 4.png'); 
-  background-position: center;
+  background-image: url('/assets/img/LakeLouise.JPG'); 
+  background-position: 50% 25%;
 }
 
 .faq-container {
@@ -14,7 +14,7 @@
   max-width: 700px;
   margin: 0 auto 50px auto;
   font-family: var(--font-sans);
-  color: var(--color-text-light);
+  color: var(--color-text-dark);
   font-size: 1.1rem;
 }
 
@@ -116,7 +116,7 @@
   text-align: center;
   margin-top: 60px;
   font-family: var(--font-sans);
-  color: var(--color-text-light);
+  color: var(--color-text-dark);
   
   a {
     color: var(--color-text-dark);

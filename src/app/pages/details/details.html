@@ -3,7 +3,7 @@
     <h1>{{ 'DETAILS.TITLE' | translate }}</h1> </div>
 </div>
 
-<div class="container-centered" appFadeIn>
+<div class="container-centered">
   <div class="intro-box">
     <p>{{ 'DETAILS.INTRO_TEXT' | translate }}</p>
     <div class="separator-line"></div>
@@ -12,45 +12,45 @@
 
 <div class="container-centered grid-2-cols">
   
-  <div class="detail-image" style="background-image: url('/assets/img/Link card 1.png');" appFadeIn></div>
+  <div class="detail-image" style="background-image: url('/assets/img/Ring.JPEG');"></div>
   
-  <div class="detail-card" appFadeIn>
-    <h3>Date</h3>
-    <p>Saturday, September 12, 2026</p>
+  <div class="detail-card">
+    <h3>{{ 'DETAILS.LABEL_DATE' | translate }}</h3>
+    <p>{{ 'HERO.DATE' | translate }}</p>
     <br>
-    <h3>Venue</h3>
-    <p>Klausenbauernhof, Wolfach, Schwarzwald</p>
+    <h3>{{ 'DETAILS.LABEL_VENUE' | translate }}</h3>
+    <p>{{ 'DETAILS.VENUE_NAME' | translate }}</p>
   </div>
 
-  <div class="detail-card" appFadeIn>
-    <h3>Ankunft</h3>
-    <p>14:00 PM</p>
+  <div class="detail-card">
+    <h3>{{ 'DETAILS.LABEL_ARRIVAL' | translate }}</h3>
+    <p>{{ 'DETAILS.ARRIVAL_TIME' | translate }}</p>
     <br>
-    <h3>Reception</h3>
-    <p>6:00 PM - Open End</p>
+    <h3>{{ 'DETAILS.LABEL_RECEPTION' | translate }}</h3>
+    <p>{{ 'DETAILS.RECEPTION_TIME' | translate }}</p>
   </div>
 
-  <div class="detail-image" style="background-image: url('/assets/img/Ring.JPEG');" appFadeIn></div>
+  <div class="detail-image" style="background-image: url('/assets/img/Klausenbauernhof.jpg');"></div>
 
 </div>
 
-<div class="page-hero travel-hero" appFadeIn>
+<div class="page-hero travel-hero">
   <div class="hero-overlay">
-    <h1>Travel & Stay</h1>
+    <h1>{{ 'DETAILS.TRAVEL_TITLE' | translate }}</h1>
   </div>
 </div>
 
 <div class="container-centered grid-2-cols section-spacing">
   
-  <div class="detail-image" style="background-image: url('/assets/img/Shaun&Klara_WeddingC&C.JPEG');" appFadeIn></div>
+  <div class="detail-image" style="background-image: url('/assets/img/Summer.jpg');"></div>
   
-  <div class="detail-card" appFadeIn>
-    <p>There are some lovely hotels and apartments in the area, The Klausenbauernhof also offers the possibility to sleep in your own van or set up your tent.</p>
+  <div class="detail-card">
+    <p [innerHTML]="'DETAILS.TRAVEL_INFO' | translate"></p>
   </div>
   
-   <div class="detail-card" appFadeIn>
-    <p>The Black Forest is a great place to add a few days for hiking.</p>
+   <div class="detail-card">
+    <p>{{ 'DETAILS.BLACK_FOREST_INFO' | translate }}</p>
   </div>
 
-  <div class="detail-image" style="background-image: url('/assets/img/LakeLouise.JPG');" appFadeIn></div>
+  <div class="detail-image" style="background-image: url('/assets/img/LakeLouise.JPG');"></div>
 </div>
