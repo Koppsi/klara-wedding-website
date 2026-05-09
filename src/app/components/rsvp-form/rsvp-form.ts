@@ -27,7 +27,7 @@ constructor(
     this.rsvpForm = this.fb.group({
       name: ['', Validators.required],
       attending: [null, Validators.required],
-      guestCount: [1],
+      guestCount: [1, [Validators.required, Validators.min(1)]],
       dietary: [''],
       songRequest: [''],
       message: [''],

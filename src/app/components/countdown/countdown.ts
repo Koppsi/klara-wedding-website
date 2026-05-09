@@ -11,7 +11,7 @@ import { interval, Subscription } from 'rxjs';
 })
 export class Countdown implements OnInit, OnDestroy{
 
-  private weddingDate = new Date(2026, 8, 20, 14, 0, 0) // Bsp: 20. September 2026, 14 Uhr
+  private weddingDate = new Date(2026, 8, 12, 14, 0, 0) // Bsp: 20. September 2026, 14 Uhr
 
   days = signal('00');
   hours = signal('00');
