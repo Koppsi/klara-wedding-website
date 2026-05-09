@@ -17,6 +17,10 @@
     height: 100%;
     object-fit: cover;
     object-position: 25% 82%;
+    /* Verhindert Rendering-Artefakte und flackern */
+    backface-visibility: hidden;
+    transform: translateZ(0) scale(1.01); /* Minimaler Scale hilft gegen Sub-Pixel-Lücken */
+    image-rendering: -webkit-optimize-contrast;
   }
 
   /* Overlay */
@@ -95,6 +99,11 @@
     object-fit: cover;
     z-index: 1;
     transition: transform 0.5s ease;
+    /* Fix für weiße Streifen beim Skalieren */
+    backface-visibility: hidden;
+    transform: translateZ(0) scale(1.01);
+    image-rendering: -webkit-optimize-contrast;
+    will-change: transform;
   }
 
   .tile-content {
