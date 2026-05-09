@@ -3,13 +3,21 @@
   position: relative;
   height: 80vh;
   width: 100%;
-  background-image: url('/assets/img/Ring.JPEG');
-  background-size: cover;
-  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
+  overflow: hidden;
+
+  .hero-bg-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 25% 82%;
+  }
 
   /* Overlay */
   &::before {
@@ -17,10 +25,12 @@
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
     background: rgba(0, 0, 0, 0.3); 
+    z-index: 1;
   }
 
   .hero-overlay {
     position: relative;
+    z-index: 2;
     color: var(--color-white);
     padding: 20px;
 
@@ -38,6 +48,11 @@
       font-weight: 400;
       margin: 0;
     }
+  }
+
+  @media (max-width: 768px) {
+    height: 60vh;
+    .hero-overlay .date { font-size: 2.2rem; }
   }
 }
 
@@ -58,34 +73,47 @@
   }
 }
 
-.grid-tile {
+/* Styling für die Kacheln und Bilder */
+.hover-tile {
   position: relative;
   width: 100%;
   aspect-ratio: 1 / 1; /* Macht sie quadratisch */
   min-height: 400px;
-  
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  background-size: cover;
-  background-position: center;
-  transition: transform 0.3s ease;
   overflow: hidden;
   cursor: pointer;
 
-  /* Hover Zoom */
-  &:hover {
-    .tile-content { transform: scale(1.05); }
+  .tile-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    transition: transform 0.5s ease;
+  }
+
+  .tile-content {
+    position: relative;
+    z-index: 2;
+  }
+
+  &:hover .tile-img {
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 768px) {
+    min-height: 300px;
+    aspect-ratio: auto;
   }
 }
 
 /* Spezifische Kacheln */
 .tile-details, .tile-rsvp, .tile-contact, .tile-faq {
-  /* Hintergrundbilder */
-  background-size: cover;
-  background-position: center;
-  
   span {
     font-family: var(--font-serif);
     color: var(--color-white);
@@ -94,14 +122,15 @@
     letter-spacing: 4px;
     z-index: 2;
     text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    backface-visibility: hidden;
+  }
+
+  @media (max-width: 768px) {
+    span { font-size: 1.8rem; letter-spacing: 2px; }
   }
 }
-
-/* Bild-Zuordnungen */
-.tile-details { background-image: url('/assets/img/Ahri.jpg'); }
-.tile-rsvp    { background-image: url('/assets/img/Airplane.JPEG'); }
-.tile-contact { background-image: url('/assets/img/Shaun&Klara_WeddingC&C.JPEG'); }
-.tile-faq     { background-image: url('/assets/img/Ahri.jpg'); }
 
 /* --- COUNTDOWN BANNER --- */
 .countdown-wrapper {
@@ -110,6 +139,12 @@
   text-align: center;
   margin-top: 60px; /* Abstand zu den Kacheln */
   margin-bottom: 60px; /* Abstand zum Footer */
+
+  @media (max-width: 768px) {
+    padding: 40px 15px;
+    min-width: unset !important; /* Entfernt die min-width auf Mobile */
+    width: 100%;
+  }
   
   /* Optional: Runde Ecken oder volle Breite? */
   /* Wenn du volle Breite willst, lass border-radius weg. */

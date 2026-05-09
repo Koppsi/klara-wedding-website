@@ -1,5 +1,6 @@
 <div class="hero-section">
-  <div class="hero-overlay" appFadeIn>
+  <img src="/assets/img/Ring.JPEG" alt="Hochzeitsringe" class="hero-bg-img">
+  <div class="hero-overlay">
     <p class="subtitle">{{ 'HERO.SUBTITLE' | translate }}</p>
     <h1 class="date">{{ 'HERO.DATE' | translate }}</h1>
   </div>
@@ -7,24 +8,28 @@
 
 <div class="container-centered grid-2-cols mt-4">
   
-  <a routerLink="/details" class="hover-tile tile-details" appFadeIn>
+  <a routerLink="/details" class="hover-tile tile-details">
+    <img src="/assets/img/Ahri.jpg" alt="" class="tile-img">
     <div class="tile-content">
       <span>{{ 'HEADER.MENU_DETAILS' | translate }}</span>
     </div>
   </a>
 
-  <a routerLink="/rsvp" class="hover-tile tile-rsvp delay-200" appFadeIn>
+  <a routerLink="/rsvp" class="hover-tile tile-rsvp">
+    <img src="/assets/img/Airplane.JPEG" alt="" class="tile-img">
     <div class="tile-content">
       <span>{{ 'HEADER.MENU_RSVP' | translate }}</span>
     </div>
   </a>
 
-  <a routerLink="/contact" class="hover-tile tile-contact" appFadeIn>
+  <a routerLink="/contact" class="hover-tile tile-contact">
+    <img src="/assets/img/Shaun&Klara_WeddingC&C.JPEG" alt="" class="tile-img">
     <div class="tile-content">
       <span>Contact</span> </div>
   </a>
 
-  <a routerLink="/faqs" class="hover-tile tile-faq delay-200" appFadeIn>
+  <a routerLink="/faqs" class="hover-tile tile-faq">
+    <img src="/assets/img/sunset.jpg" alt="" class="tile-img">
     <div class="tile-content">
       <span>FAQ</span>
     </div>
@@ -35,7 +40,7 @@
 <div class="grid-container">
 </div>
 
-<div class="countdown-wrapper" appFadeIn>
+<div class="countdown-wrapper">
   <div class="container-centered">
     
     <app-countdown></app-countdown>
