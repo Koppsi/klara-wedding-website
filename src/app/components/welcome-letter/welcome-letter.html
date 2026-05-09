@@ -1,0 +1,44 @@
+@if (!isHidden) {
+  <div class="letter-overlay" [class.is-open]="isOpen">
+    
+    <div class="envelope-wrapper" (click)="openLetter()">
+      
+      <div class="envelope-back"></div>
+      
+      <div class="letter-card">
+        <div class="card-content">
+          <h2 class="script-font">Klara & Shaun</h2>
+          <p class="date">01.06.2026</p>
+          
+          <div class="seal-hint">
+            @if (!isOpen) {
+              <span class="click-text">Klick zum Öffnen</span>
+            }
+          </div>
+        </div>
+      </div>
+      
+      <div class="envelope-front-pocket"></div>
+
+      <div class="envelope-front-top"></div>
+      
+      <div class="envelope-flap"></div>
+      
+      <div class="ribbon-container">
+        <div class="ribbon-band"></div>
+        
+        <div class="ribbon-bow">
+          <div class="bow-tail-left"></div>
+          <div class="bow-tail-right"></div>
+          
+          <div class="bow-loop-left"></div>
+          <div class="bow-loop-right"></div>
+          
+          <div class="bow-knot"></div>
+        </div>
+      </div>
+      
+    </div>
+    
+  </div>
+}

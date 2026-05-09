@@ -3,10 +3,11 @@ import { RouterOutlet } from '@angular/router';
 import { Navbar } from './components/navbar/navbar';
 import { Footer } from './components/footer/footer';
 import * as AOS from 'aos';
+import { WelcomeLetter } from "./components/welcome-letter/welcome-letter";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Navbar, Footer],
+  imports: [RouterOutlet, Navbar, Footer, WelcomeLetter],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
