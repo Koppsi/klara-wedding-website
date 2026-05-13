@@ -1,5 +1,5 @@
 <div class="page-hero">
-  <img src="assets/img/aurora.jpg" alt="Hero Aurora" class="hero-bg-img">
+  <img src="assets/img/aurora2.jpg" alt="Hero Aurora" class="hero-bg-img">
   <div class="hero-overlay">
     <h1>{{ 'DETAILS.TITLE' | translate }}</h1> </div>
 </div>
@@ -12,8 +12,10 @@
 </div>
 
 <div class="container-centered grid-2-cols">
-  
-  <img src="assets/img/Ring.JPEG" alt="Wedding Rings" class="detail-image">
+
+  <div class="image-wrapper">
+    <img src="assets/img/Ring_quadrat.jpg" alt="Wedding Rings" class="detail-image">
+  </div>
   
   <div class="detail-card">
     <h3>{{ 'DETAILS.LABEL_DATE' | translate }}</h3>
@@ -31,12 +33,14 @@
     <p>{{ 'DETAILS.RECEPTION_TIME' | translate }}</p>
   </div>
 
-  <img src="assets/img/Klausenbauernhof.jpg" alt="Klausenbauernhof" class="detail-image">
+  <div class="image-wrapper">
+    <img src="assets/img/Klausenbauernhof.jpg" alt="Klausenbauernhof" class="detail-image">
+  </div>
 
 </div>
 
 <div class="page-hero travel-hero">
-  <img src="assets/img/aurora.jpg" alt="Travel Aurora" class="hero-bg-img">
+  <img src="assets/img/aurora2.jpg" alt="Travel Aurora" class="hero-bg-img">
   <div class="hero-overlay">
     <h1>{{ 'DETAILS.TRAVEL_TITLE' | translate }}</h1>
   </div>
@@ -44,8 +48,10 @@
 
 <div class="container-centered grid-2-cols section-spacing">
   
-  <img src="assets/img/Summer.jpg" alt="Summer atmosphere" class="detail-image">
-  
+  <div class="image-wrapper">
+    <img src="assets/img/Summer.jpg" alt="Summer atmosphere" class="detail-image">
+  </div>
+
   <div class="detail-card">
     <p [innerHTML]="'DETAILS.TRAVEL_INFO' | translate"></p>
   </div>
@@ -54,5 +60,7 @@
     <p>{{ 'DETAILS.BLACK_FOREST_INFO' | translate }}</p>
   </div>
 
-  <img src="assets/img/LakeLouise.JPG" alt="Lake Louise" class="detail-image">
+  <div class="image-wrapper">
+    <img src="assets/img/LakeLouise.JPG" alt="Lake Louise" class="detail-image">
+  </div>
 </div>
