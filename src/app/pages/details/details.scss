@@ -45,6 +45,7 @@
   aspect-ratio: 1 / 1;
   width: 100%; 
   box-sizing: border-box;
+  border-radius: var(--border-radius-soft);
   
   h3 {
     font-family: var(--font-serif);
@@ -59,6 +60,17 @@
     font-size: 1rem;
     line-height: 1.5;
   }
+
+  ::ng-deep .venue-link {
+    color: var(--color-text-light); /* Bleibt schön hell (Weiß) */
+    text-decoration: underline; /* Die Unterstreichung! */
+    text-underline-offset: 4px; /* Setzt die Linie minimal tiefer, sieht viel moderner aus */
+    transition: opacity 0.3s ease; /* Weicher Übergang beim Drüberfahren */
+
+    &:hover {
+      opacity: 0.7; /* Wird beim Drüberfahren mit der Maus leicht transparent */
+    }
+  }
 }
 
 .image-wrapper {
@@ -66,6 +78,7 @@
   aspect-ratio: 1 / 1;
   overflow: hidden; 
   position: relative;
+  border-radius: var(--border-radius-soft);
 
   &::after {
     content: '';

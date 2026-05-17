@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-welcome-letter',
@@ -6,12 +6,14 @@ import { Component } from '@angular/core';
   templateUrl: './welcome-letter.html',
   styleUrl: './welcome-letter.scss',
 })
-export class WelcomeLetter {
+export class WelcomeLetter implements OnInit {
   isOpen = false;
   isHidden = false;
 
   ngOnInit() {
-    const alreadyOpened = sessionStorage.getItem('letterOpened');
+    // Prüft, ob der Gast den Brief in der Vergangenheit schon mal geöffnet hat
+    const alreadyOpened = localStorage.getItem('letterOpened');
+    
     if (alreadyOpened) {
       this.isHidden = true;
     }
@@ -29,7 +31,10 @@ export class WelcomeLetter {
     // Nach 3 Sekunden (wenn alle Animationen fertig sind) ausblenden
     setTimeout(() => {
       this.isHidden = true;
-      // sessionStorage.setItem('letterOpened', 'true'); // Für den nächsten Seitenwechsel merken
+      
+      // Speichert die Info DAUERHAFT im Browser des Gastes ab
+      localStorage.setItem('letterOpened', 'true'); 
+      
       document.body.style.overflow = 'auto'; // Scrollen wieder erlauben
     }, 3000); 
   }

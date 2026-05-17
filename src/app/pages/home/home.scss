@@ -16,7 +16,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 25% 82%;
+    object-position: 50% 40%;
     /* Verhindert Rendering-Artefakte und flackern */
     backface-visibility: hidden;
     transform: translateZ(0) scale(1.01); /* Minimaler Scale hilft gegen Sub-Pixel-Lücken */
@@ -90,6 +90,7 @@
   text-decoration: none;
   overflow: hidden;
   cursor: pointer;
+  border-radius: var(--border-radius-soft);
 
   .tile-img {
     position: absolute;

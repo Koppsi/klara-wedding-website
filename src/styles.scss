@@ -131,6 +131,7 @@ h1, h2, h3, .serif-font {
     height: auto;
     display: block;
     filter: sepia(10%); /* Leichter Vintage Look */
+    border-radius: var(--border-radius-soft);
   }
 
   .caption {

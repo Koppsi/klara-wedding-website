@@ -14,11 +14,15 @@ export class Navbar {
   currentLang: string = 'de';
 
   constructor(private translate: TranslateService) {
-    this.currentLang = this.translate.currentLang || 'de';
+    const savedLang = localStorage.getItem('selectedLanguage');
+    this.currentLang = savedLang || this.translate.currentLang || 'de';
   }
 
   changeLanguage(lang: string) {
     this.translate.use(lang);
     this.currentLang = lang;
+    
+    // Speichert die ausgewählte Sprache DAUERHAFT im Browser
+    localStorage.setItem('selectedLanguage', lang);
   }
 }

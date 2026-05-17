@@ -7,14 +7,14 @@
     "INTRO_TEXT": "We joyfully invite you to our wedding at the Klausenbauernhof...",
     "LABEL_DATE": "Date",
     "LABEL_VENUE": "Venue",
-    "VENUE_NAME": "Klausenbauernhof, Wolfach, Black Forest",
+    "VENUE_NAME": "<a href='https://www.klausenbauernhof.de/' target='_blank' rel='noopener noreferrer' class='venue-link'>Klausenbauernhof</a> <br> Ippichen 1 <br> 77709 Wolfach <br> Black Forrest",
     "LABEL_ARRIVAL": "Arrival",
     "ARRIVAL_TIME": "to be announced",
     "LABEL_RECEPTION": "Reception",
     "RECEPTION_TIME": "6:00 PM - Open End",
     "TRAVEL_TITLE": "Travel & Stay",
-    "TRAVEL_INFO": "We have rented the venue for the whole weekend. You are more than welcome to arrive Friday evening or stay until Sunday morning. <br><br> There are some lovely hotels and apartments in the area. The Klausenbauernhof also offers the possibility to sleep in your own van or set up your tent.",
-    "BLACK_FOREST_INFO": "The Black Forest is a great place to add a few days for hiking, mountain biking or spas."
+    "TRAVEL_INFO": "There are some lovely hotels and apartments in the area. The Klausenbauernhof also offers the possibility to sleep in your own van or set up your tent.",
+    "BLACK_FOREST_INFO": "The Black Forest is a great place to add a few days for hiking, mountain biking or spas. You can find more info <a href='https://www.schwarzwald-tourismus.info/' target='_blank' rel='noopener noreferrer' class='venue-link'>here</a>."
   },
   "HERO": {
     "DATE": "Saturday, September 12, 2026",
@@ -23,6 +23,8 @@
   "HEADER": {
     "MENU_HOME": "Home",
     "MENU_DETAILS": "Details",
+    "MENU_CONTACT": "Contact",
+    "MENU_FAQS": "FAQs",
     "MENU_RSVP": "RSVP"
   },
   "RSVP": {
@@ -35,12 +37,21 @@
     "OPTION_YES": "Joyfully Accept",
     "OPTION_NO": "Regretfully Decline",
     "LABEL_COUNT": "Number of Guests",
+    "LABEL_NAMES_ATTENDING": "Name(s) of the guest(s)",
+    "PLACEHOLDER_NAME_N": "Name of Guest {{num}}",
+    "PLACEHOLDER_NAME_NO": "Name(s) for the declination",
     "LABEL_DIET": "Dietary Restrictions",
     "PLACEHOLDER_DIET": "Vegan, Gluten-free, allergies...",
     "LABEL_SONG": "I promise to dance if you play:",
     "PLACEHOLDER_SONG": "Artist - Song Name",
     "LABEL_MESSAGE": "Leave a note for the couple",
     "BUTTON_SEND": "Send RSVP",
+
+    "LABEL_ACCOMMODATION": "I would like to sleep in",
+    "OPTION_ACC_NONE": "Please select",
+    "OPTION_CAMPER": "a camper",
+    "OPTION_TENT": "a tent",
+    "OPTION_ELSEWHERE": "Elsewhere (Hotel / Home)",
     
     "ERROR_REQUIRED": "This field is required",
     "SUCCESS_TITLE": "Thank You!",
@@ -52,8 +63,8 @@
     "GENERAL_QUESTIONS": "General Questions",
     "GENERAL_SUB": "For RSVP updates or dietary restrictions",
     "MAILING_ADDRESS": "Mailing Address",
-    "DAY_OF": "Day-of Contact",
-    "DAY_OF_SUB": "Please call our lovely maid of honor for urgent matters on the wedding day."
+    "DAY_OF": "Program & Surprises",
+    "DAY_OF_SUB": "Are you planning a speech, a game, or a surprise? Please contact our maid of honor."
   },
   "FAQS": {
     "TITLE": "Q & A",
@@ -79,7 +90,7 @@
     "A_TRANSPORT": "Yes, the venue has some parking spots. You can leave your car there overnight if you decide to take a taxi home.",
 
     "Q_ACCOMODATION": "Can we sleep at the venue?",
-    "A_ACCOMODATION": "Yes, the venue offers some sleeping spots. Some rooms are available but they are first come, first serve. There are also spaces for your camping-vans or tents. Please let us know, if you're planning to stay at the venue."
+    "A_ACCOMODATION": "There are spaces for your camping-vans or tents. Please let us know, if you're planning to stay at the venue."
 
   },
   "COUNTDOWN": {

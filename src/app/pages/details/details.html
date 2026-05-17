@@ -22,7 +22,7 @@
     <p>{{ 'HERO.DATE' | translate }}</p>
     <br>
     <h3>{{ 'DETAILS.LABEL_VENUE' | translate }}</h3>
-    <p>{{ 'DETAILS.VENUE_NAME' | translate }}</p>
+    <p [innerHTML]="'DETAILS.VENUE_NAME' | translate"></p>
   </div>
 
   <div class="detail-card">
@@ -57,10 +57,10 @@
   </div>
   
    <div class="detail-card">
-    <p>{{ 'DETAILS.BLACK_FOREST_INFO' | translate }}</p>
+    <p [innerHTML]="'DETAILS.BLACK_FOREST_INFO' | translate"></p>
   </div>
 
   <div class="image-wrapper">
-    <img src="assets/img/LakeLouise.JPG" alt="Lake Louise" class="detail-image">
+    <img src="assets/img/LakeLouise_quadrat.jpg" alt="Lake Louise" class="detail-image">
   </div>
 </div>

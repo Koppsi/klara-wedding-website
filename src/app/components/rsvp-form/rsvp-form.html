@@ -13,13 +13,6 @@
         <label for="website">Please leave this field blank</label>
         <input type="text" id="website" formControlName="website" tabindex="-1" autocomplete="off">
       </div>
-      <div class="form-group">
-        <label for="name">{{ 'RSVP.LABEL_NAME' | translate }}*</label>
-        <input type="text" id="name" formControlName="name" placeholder="Name(n)">
-        @if (f['name'].touched && f['name'].errors) {
-          <small class="error">{{ 'RSVP.ERROR_REQUIRED' | translate }}</small>
-        }
-      </div>
 
       <div class="form-group radio-group">
         <label class="main-label">{{ 'RSVP.LABEL_ATTENDING' | translate }}*</label>
@@ -38,10 +31,11 @@
         }
       </div>
 
-      @if (isAttending()) {
-        <div class="slide-in">
-          <div class="form-group">
-            <label for="guests">{{ 'RSVP.LABEL_COUNT' | translate }}</label>
+      @if (rsvpForm.get('attending')?.value !== null) {
+        
+        @if (isAttending()) {
+          <div class="form-group slide-in">
+            <label for="guests">{{ 'RSVP.LABEL_COUNT' | translate }}*</label>
             <select id="guests" formControlName="guestCount">
               <option [value]="1">1 Person</option>
               <option [value]="2">2 Personen</option>
@@ -50,34 +44,79 @@
               <option [value]="5">5 Personen</option>
             </select>
           </div>
-          <div class="form-group">
-            <label for="dietary">{{ 'RSVP.LABEL_DIET' | translate }}</label>
-            <input type="text" id="dietary" formControlName="dietary" placeholder="{{ 'RSVP.PLACEHOLDER_DIET' | translate }}">
-          </div>
-          <div class="form-group">
-            <label for="song">{{ 'RSVP.LABEL_SONG' | translate }}</label>
-            <input type="text" id="song" formControlName="songRequest" placeholder="{{ 'RSVP.PLACEHOLDER_SONG' | translate }}">
-          </div>
-        </div>
-      }
-
-      <div class="form-group">
-        <label for="message">{{ 'RSVP.LABEL_MESSAGE' | translate }}</label>
-        <textarea id="message" formControlName="message" rows="4"></textarea>
-      </div>
-
-      <div class="button-wrapper">
-        <button type="submit" class="btn-primary" [disabled]="isLoading">
-          @if (isLoading) {
-            Senden...
-          } @else {
-            {{ 'RSVP.BUTTON_SEND' | translate }}
-          }
-        </button>
-        @if (errorMessage) {
-          <p class="error" style="margin-top: 10px;">{{ errorMessage }}</p>
         }
-      </div>
+
+        <div class="form-group" formArrayName="names">
+          <label class="main-label">
+            @if (isAttending()) {
+              {{ 'RSVP.LABEL_NAMES_ATTENDING' | translate }}*
+            } @else {
+              {{ 'RSVP.LABEL_NAME' | translate }}*
+            }
+          </label>
+
+          @for (control of namesArray.controls; track $index) {
+            <div style="margin-bottom: 10px;" class="slide-in">
+              <input 
+                type="text" 
+                [formControlName]="$index" 
+                [placeholder]="isAttending() ? ('RSVP.PLACEHOLDER_NAME_N' | translate : {num: $index + 1}) : ('RSVP.PLACEHOLDER_NAME_NO' | translate)"
+              >
+              @if (control.touched && control.errors) {
+                <small class="error">{{ 'RSVP.ERROR_REQUIRED' | translate }}</small>
+              }
+            </div>
+          }
+        </div>
+
+        @if (isAttending()) {
+          <div class="slide-in">
+            
+            <div class="form-group">
+              <label for="accommodation">{{ 'RSVP.LABEL_ACCOMMODATION' | translate }}*</label>
+              <select id="accommodation" formControlName="accommodation">
+                <option value="" disabled selected>{{ 'RSVP.OPTION_ACC_NONE' | translate }}</option>
+                <option value="camper">{{ 'RSVP.OPTION_CAMPER' | translate }}</option>
+                <option value="tent">{{ 'RSVP.OPTION_TENT' | translate }}</option>
+                <option value="elsewhere">{{ 'RSVP.OPTION_ELSEWHERE' | translate }}</option>
+              </select>
+              @if (f['accommodation'].touched && f['accommodation'].errors) {
+                <small class="error">{{ 'RSVP.ERROR_REQUIRED' | translate }}</small>
+              }
+            </div>
+
+            <div class="form-group">
+              <label for="dietary">{{ 'RSVP.LABEL_DIET' | translate }}</label>
+              <input type="text" id="dietary" formControlName="dietary" placeholder="{{ 'RSVP.PLACEHOLDER_DIET' | translate }}">
+            </div>
+
+            <div class="form-group">
+              <label for="song">{{ 'RSVP.LABEL_SONG' | translate }}</label>
+              <input type="text" id="song" formControlName="songRequest" placeholder="{{ 'RSVP.PLACEHOLDER_SONG' | translate }}">
+            </div>
+
+          </div>
+        }
+
+        <div class="form-group slide-in">
+          <label for="message">{{ 'RSVP.LABEL_MESSAGE' | translate }}</label>
+          <textarea id="message" formControlName="message" rows="4"></textarea>
+        </div>
+
+        <div class="button-wrapper">
+          <button type="submit" class="btn-primary" [disabled]="isLoading">
+            @if (isLoading) {
+              Senden...
+            } @else {
+              {{ 'RSVP.BUTTON_SEND' | translate }}
+            }
+          </button>
+          @if (errorMessage) {
+            <p class="error" style="margin-top: 10px;">{{ errorMessage }}</p>
+          }
+        </div>
+
+      }
 
     </form>
   }

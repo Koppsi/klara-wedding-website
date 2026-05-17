@@ -7,14 +7,14 @@
     "INTRO_TEXT": "Wir laden euch herzlich zu unserer Hochzeit auf den Klausenbauernhof ein...",
     "LABEL_DATE": "Datum",
     "LABEL_VENUE": "Ort",
-    "VENUE_NAME": "Klausenbauernhof, Wolfach, Schwarzwald",
+    "VENUE_NAME": "<a href='https://www.klausenbauernhof.de/' target='_blank' rel='noopener noreferrer' class='venue-link'>Klausenbauernhof</a> <br> Ippichen 1 <br> 77709 Wolfach <br> Schwarzwald",
     "LABEL_ARRIVAL": "Ankunft",
     "ARRIVAL_TIME": "wird noch bekannt gegeben",
     "LABEL_RECEPTION": "Feier",
     "RECEPTION_TIME": "18:00 Uhr - Open End",
     "TRAVEL_TITLE": "Anreise & Unterkunft",
-    "TRAVEL_INFO": "Wir haben den Klausenbauernhof von Freitagabend - Sonntagmorgen gemietet - wer möchte, kann gerne früher kommen oder bis Sonntag bleiben.<br><br>In der Umgebung gibt es einige schöne Hotels und Ferienwohnungen. Der Klausenbauernhof bietet zudem die Möglichkeit, im eigenen Camper zu übernachten oder ein Zelt aufzuschlagen.",
-    "BLACK_FOREST_INFO": "Der Schwarzwald ist ein idealer Ort, um ein paar Tage zum Wandern, Mountainbiken oder für Wellness-Besuche dranzuhängen."
+    "TRAVEL_INFO": "In der Umgebung gibt es einige schöne Hotels und Ferienwohnungen. Der Klausenbauernhof bietet zudem die Möglichkeit, im eigenen Camper zu übernachten oder ein Zelt aufzuschlagen.",
+    "BLACK_FOREST_INFO": "Der Schwarzwald ist ein idealer Ort, um ein paar Tage zum Wandern, Mountainbiken oder für Wellness-Besuche dranzuhängen. Weitere Infos dazu findet ihr <a href='https://www.schwarzwald-tourismus.info/' target='_blank' rel='noopener noreferrer' class='venue-link'>hier</a>."
   },
   "HERO": {
     "DATE": "Samstag, 12. September 2026",
@@ -23,6 +23,8 @@
   "HEADER": {
     "MENU_HOME": "Startseite",
     "MENU_DETAILS": "Details",
+    "MENU_CONTACT": "Kontakt",
+    "MENU_FAQS": "FAQs",
     "MENU_RSVP": "RSVP"
   },
   "RSVP": {
@@ -30,19 +32,28 @@
     "TEXT_TOP": "Bitte gebt uns bis zum 31. Juli Bescheid, ob ihr kommen könnt.",
     "TEXT_BOTTOM": "Ihr möchtet gerne schon Freitagabend mit uns verbringen oder am Sonntag zum Frühstück bleiben? Dann schreibt dies bitte in eure RSVP.",
     
-    "LABEL_NAME": "Name(n)",
     "LABEL_ATTENDING": "Werdet ihr dabei sein?",
-    "OPTION_YES": "Wir kommen gerne",
-    "OPTION_NO": "Wir müssen leider absagen",
-    "LABEL_COUNT": "Anzahl Personen",
-    "LABEL_DIET": "Essenswünsche / Allergien",
+    "OPTION_YES": "Ich/Wir komme/n gerne",
+    "OPTION_NO": "Ich/Wir komme/n leider nicht",
+    "LABEL_COUNT": "Anzahl der Personen",
+    "LABEL_NAMES_ATTENDING": "Name(n) der Person(en)",
+    "LABEL_NAME": "Dein Name / Eure Namen",
+    "PLACEHOLDER_NAME_N": "Name von Person {{num}}",
+    "PLACEHOLDER_NAME_NO": "Name(n) für die Absage",
+    "LABEL_DIET": "Allergien / Besonderheiten",
     "PLACEHOLDER_DIET": "Vegan, Glutenfrei, Nüsse...",
     "LABEL_SONG": "Ich tanze garantiert bei:",
     "PLACEHOLDER_SONG": "Interpret - Songtitel",
     "LABEL_MESSAGE": "Nachricht an uns",
     "BUTTON_SEND": "Absenden",
-    
-    "ERROR_REQUIRED": "Dieses Feld ist Pflicht",
+
+    "LABEL_ACCOMMODATION": "Ich/Wir möchte/n schlafen",
+    "OPTION_ACC_NONE": "Bitte wählen",
+    "OPTION_CAMPER": "im Camper",
+    "OPTION_TENT": "im Zelt",
+    "OPTION_ELSEWHERE": "Woanders (Hotel / Zuhause)",
+
+    "ERROR_REQUIRED": "Dieses Feld ist ein Pflicht",
     "SUCCESS_TITLE": "Danke!",
     "SUCCESS_TEXT": "Eure Antwort ist angekommen. Wir freuen uns auf euch!"
   },
@@ -50,10 +61,10 @@
     "TITLE": "Kontakt",
     "INTRO": "Wir freuen uns riesig darauf, mit euch zu feiern! Wenn ihr Fragen zur Location, Unterkunft habt oder einfach Hallo sagen wollt, meldet euch.",
     "GENERAL_QUESTIONS": "Allgemeine Fragen",
-    "GENERAL_SUB": "Für Fragen zur Zusage oder Essen",
+    "GENERAL_SUB": "Für allgemeine Fragen und Rückfragen zur Location",
     "MAILING_ADDRESS": "Postadresse",
-    "DAY_OF": "Am Hochzeitstag",
-    "DAY_OF_SUB": "Bitte wendet euch bei dringenden Fragen am Hochzeitstag an unsere Trauzeugin."
+    "DAY_OF": "Programm & Überraschungen",
+    "DAY_OF_SUB": "Ihr plant eine Rede, ein Spiel oder eine Überraschung? Bitte wendet euch an unsere Trauzeugin."
   },
   "FAQS": {
     "TITLE": "Fragen & Antworten",
@@ -79,7 +90,7 @@
     "A_TRANSPORT": "Ja, direkt am Klausenbauernhof gibt es Parkmöglichkeiten. Autos können dort auch über Nacht stehen bleiben.",
    
     "Q_ACCOMODATION": "Gibt es Schlafplätze vor Ort?",
-    "A_ACCOMODATION": "Ja, es gibt einzelne Räume, die für unsere Gäste bereitstehen. Diese sind aber First Come, First Serve. Zusätzlich gibt es auch Stellplätze für eure Camper, Dachzelte oder auch reguläre Zelte. Gebt uns bitte bald Bescheid, wenn ihr plant, vor Ort zu übernachten."
+    "A_ACCOMODATION": "Es gibt es auch Stellplätze für eure Camper, Dachzelte oder auch reguläre Zelte. Gebt uns bitte bald Bescheid, wenn ihr plant, vor Ort zu übernachten."
   },
   "COUNTDOWN": {
     "DAYS": "Tage",
