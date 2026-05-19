@@ -1,10 +1,10 @@
 {
   "HOME": {
-    "SUBTITLE": "WIR HEIRATEN"
+    "SUBTITLE": "Wir heiraten"
   },
   "DETAILS": {
-    "TITLE": "Die Details",
-    "INTRO_TEXT": "Wir laden euch herzlich zu unserer Hochzeit auf den Klausenbauernhof ein...",
+    "TITLE": "Details",
+    "INTRO_TEXT": "Wir laden euch herzlich zu unserer Hochzeit auf den Klausenbauernhof ein - ein wunderschöner Bauernhof, der seit 1561 im Herzen des Schwarzwalds existiert.",
     "LABEL_DATE": "Datum",
     "LABEL_VENUE": "Ort",
     "VENUE_NAME": "<a href='https://www.klausenbauernhof.de/' target='_blank' rel='noopener noreferrer' class='venue-link'>Klausenbauernhof</a> <br> Ippichen 1 <br> 77709 Wolfach <br> Schwarzwald",
@@ -14,7 +14,7 @@
     "RECEPTION_TIME": "18:00 Uhr - Open End",
     "TRAVEL_TITLE": "Anreise & Unterkunft",
     "TRAVEL_INFO": "In der Umgebung gibt es einige schöne Hotels und Ferienwohnungen. Der Klausenbauernhof bietet zudem die Möglichkeit, im eigenen Camper zu übernachten oder ein Zelt aufzuschlagen.",
-    "BLACK_FOREST_INFO": "Der Schwarzwald ist ein idealer Ort, um ein paar Tage zum Wandern, Mountainbiken oder für Wellness-Besuche dranzuhängen. Weitere Infos dazu findet ihr <a href='https://www.schwarzwald-tourismus.info/' target='_blank' rel='noopener noreferrer' class='venue-link'>hier</a>."
+    "BLACK_FOREST_INFO": "Der Schwarzwald ist ein idealer Ort, um ein paar Tage zum Wandern, Mountainbiken oder für Wellness-Besuche dranzuhängen. <br> Weitere Infos dazu findet ihr <a href='https://www.schwarzwald-tourismus.info/' target='_blank' rel='noopener noreferrer' class='venue-link'>hier</a> oder fragt uns."
   },
   "HERO": {
     "DATE": "Samstag, 12. September 2026",
@@ -24,7 +24,7 @@
     "MENU_HOME": "Startseite",
     "MENU_DETAILS": "Details",
     "MENU_CONTACT": "Kontakt",
-    "MENU_FAQS": "FAQs",
+    "MENU_FAQS": "FAQ",
     "MENU_RSVP": "RSVP"
   },
   "RSVP": {
@@ -59,7 +59,7 @@
   },
   "CONTACT": {
     "TITLE": "Kontakt",
-    "INTRO": "Wir freuen uns riesig darauf, mit euch zu feiern! Wenn ihr Fragen zur Location, Unterkunft habt oder einfach Hallo sagen wollt, meldet euch.",
+    "INTRO": "Wir freuen uns riesig darauf, mit euch zu feiern! <br><br> Habt ihr noch Fragen zur Location oder eine schöne Idee für das Programm? Dann meldet euch jederzeit gerne!",
     "GENERAL_QUESTIONS": "Allgemeine Fragen",
     "GENERAL_SUB": "Für allgemeine Fragen und Rückfragen zur Location",
     "MAILING_ADDRESS": "Postadresse",
@@ -90,7 +90,13 @@
     "A_TRANSPORT": "Ja, direkt am Klausenbauernhof gibt es Parkmöglichkeiten. Autos können dort auch über Nacht stehen bleiben.",
    
     "Q_ACCOMODATION": "Gibt es Schlafplätze vor Ort?",
-    "A_ACCOMODATION": "Es gibt es auch Stellplätze für eure Camper, Dachzelte oder auch reguläre Zelte. Gebt uns bitte bald Bescheid, wenn ihr plant, vor Ort zu übernachten."
+    "A_ACCOMODATION": "Es gibt es auch Stellplätze für eure Camper, Dachzelte oder auch reguläre Zelte. Gebt uns bitte bald Bescheid, wenn ihr plant, vor Ort zu übernachten.",
+    
+    "Q_FLIGHTS": "Welche Flughäfen liegen in der Nähe?",
+    "A_FLIGHTS": "Die nächstgelegenen Flughäfen sind Straßburg (SXB), Karlsruhe/Baden-Baden (FKB) sowie der Flughafen Stuttgart (STR) oder EuroAirport Basel Mulhouse Freiburg (BSL). Von dort aus empfiehlt sich die Weiterreise mit einem Mietwagen oder der Bahn.",
+
+    "Q_TENT_RENTAL": "Kann ich vor Ort zelten, wenn ich kein eigenes Zelt habe?",
+    "A_TENT_RENTAL": "Ja, absolut! Solltet ihr gerne auf dem Hof im Zelt übernachten wollen, aber keine eigene Ausrüstung haben, gebt uns einfach Bescheid. Wir können gerne Zelte und Zubehör für euch organisieren."
   },
   "COUNTDOWN": {
     "DAYS": "Tage",
