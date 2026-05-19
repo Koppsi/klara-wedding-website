@@ -25,4 +25,20 @@ export class Navbar {
     // Speichert die ausgewählte Sprache DAUERHAFT im Browser
     localStorage.setItem('selectedLanguage', lang);
   }
+
+  closeMenu() {
+    const navbarCollapse = document.getElementById('navbarNav');
+    
+    // Prüfen, ob das Menü aktuell offen ist (Klasse 'show' ist vorhanden)
+    if (navbarCollapse?.classList.contains('show')) {
+      
+      // Wir suchen den Hamburger-Button...
+      const toggler = document.querySelector('.navbar-toggler') as HTMLElement;
+      
+      // ... und "klicken" ihn programmatisch per Code!
+      if (toggler) {
+        toggler.click();
+      }
+    }
+  }
 }

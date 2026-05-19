@@ -42,7 +42,6 @@
     .subtitle {
       font-family: var(--font-sans);
       font-size: 1.2rem;
-      text-transform: uppercase;
       letter-spacing: 2px;
       margin-bottom: 10px;
     }
@@ -52,6 +51,7 @@
       font-size: 3rem;
       font-weight: 400;
       margin: 0;
+      text-transform: uppercase;
     }
   }
 
@@ -165,6 +165,7 @@
     padding: 40px 15px;
     min-width: unset !important; /* Entfernt die min-width auf Mobile */
     width: 100%;
+    box-sizing: border-box;
   }
   
   /* Optional: Runde Ecken oder volle Breite? */

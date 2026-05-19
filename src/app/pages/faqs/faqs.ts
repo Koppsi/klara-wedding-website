@@ -18,6 +18,8 @@ export class Faqs {
     { question: 'FAQS.Q_GIFTS', answer: 'FAQS.A_GIFTS', isOpen: false },
     { question: 'FAQS.Q_TRANSPORT', answer: 'FAQS.A_TRANSPORT', isOpen: false },
     { question: 'FAQS.Q_ACCOMODATION', answer: 'FAQS.A_ACCOMODATION', isOpen: false },
+    { question: 'FAQS.Q_FLIGHTS', answer: 'FAQS.A_FLIGHTS', isOpen: false },
+    { question: 'FAQS.Q_TENT_RENTAL', answer: 'FAQS.A_TENT_RENTAL', isOpen: false },
   ];
 
   toggleFaq(index: number) {

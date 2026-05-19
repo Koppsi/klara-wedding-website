@@ -1,20 +1,20 @@
 {
   "HOME": {
-    "SUBTITLE": "WE ARE GETTING MARRIED"
+    "SUBTITLE": "We are getting married"
   },
   "DETAILS": {
-    "TITLE": "The Details",
-    "INTRO_TEXT": "We joyfully invite you to our wedding at the Klausenbauernhof...",
+    "TITLE": "Details",
+    "INTRO_TEXT": "We invite you to our wedding at Klausenbauernhof, a lovely farm existing since 1561 in the middle of the Black Forest.",
     "LABEL_DATE": "Date",
     "LABEL_VENUE": "Venue",
-    "VENUE_NAME": "<a href='https://www.klausenbauernhof.de/' target='_blank' rel='noopener noreferrer' class='venue-link'>Klausenbauernhof</a> <br> Ippichen 1 <br> 77709 Wolfach <br> Black Forrest",
+    "VENUE_NAME": "<a href='https://www.klausenbauernhof.de/' target='_blank' rel='noopener noreferrer' class='venue-link'>Klausenbauernhof</a> <br> Ippichen 1 <br> 77709 Wolfach <br> Black Forest",
     "LABEL_ARRIVAL": "Arrival",
     "ARRIVAL_TIME": "to be announced",
     "LABEL_RECEPTION": "Reception",
     "RECEPTION_TIME": "6:00 PM - Open End",
     "TRAVEL_TITLE": "Travel & Stay",
     "TRAVEL_INFO": "There are some lovely hotels and apartments in the area. The Klausenbauernhof also offers the possibility to sleep in your own van or set up your tent.",
-    "BLACK_FOREST_INFO": "The Black Forest is a great place to add a few days for hiking, mountain biking or spas. You can find more info <a href='https://www.schwarzwald-tourismus.info/' target='_blank' rel='noopener noreferrer' class='venue-link'>here</a>."
+    "BLACK_FOREST_INFO": "The Black Forest is a great place to add a few days for hiking, mountain biking or spas. <br> You can find more info <a href='https://www.schwarzwald-tourismus.info/' target='_blank' rel='noopener noreferrer' class='venue-link'>here</a> or contact us."
   },
   "HERO": {
     "DATE": "Saturday, September 12, 2026",
@@ -24,7 +24,7 @@
     "MENU_HOME": "Home",
     "MENU_DETAILS": "Details",
     "MENU_CONTACT": "Contact",
-    "MENU_FAQS": "FAQs",
+    "MENU_FAQS": "Q&A",
     "MENU_RSVP": "RSVP"
   },
   "RSVP": {
@@ -58,10 +58,10 @@
     "SUCCESS_TEXT": "Your RSVP has been sent. We can't wait to see you!"
   },
   "CONTACT": {
-    "TITLE": "Get in Touch",
-    "INTRO": "We can't wait to celebrate with you! If you have any questions about the venue, accommodation, or just want to say hi, let us know.",
+    "TITLE": "Contact",
+    "INTRO": "We can't wait to celebrate with you! <br><br> Do you have any further questions about the venue, or a great idea for the program? Then please feel free to get in touch anytime!",
     "GENERAL_QUESTIONS": "General Questions",
-    "GENERAL_SUB": "For RSVP updates or dietary restrictions",
+    "GENERAL_SUB": "For general inquiries and questions regarding the venue",
     "MAILING_ADDRESS": "Mailing Address",
     "DAY_OF": "Program & Surprises",
     "DAY_OF_SUB": "Are you planning a speech, a game, or a surprise? Please contact our maid of honor."
@@ -90,8 +90,13 @@
     "A_TRANSPORT": "Yes, the venue has some parking spots. You can leave your car there overnight if you decide to take a taxi home.",
 
     "Q_ACCOMODATION": "Can we sleep at the venue?",
-    "A_ACCOMODATION": "There are spaces for your camping-vans or tents. Please let us know, if you're planning to stay at the venue."
+    "A_ACCOMODATION": "There are spaces for your camping-vans or tents. Please let us know, if you're planning to stay at the venue.",
 
+    "Q_FLIGHTS": "Which airports are nearby?",
+    "A_FLIGHTS": "The closest airports are Strasbourg (SXB), Karlsruhe/Baden-Baden (FKB), Stuttgart Airport (STR), or EuroAirport Basel Mulhouse Freiburg (BSL). From there, we recommend continuing your journey by rental car or train.",
+
+    "Q_TENT_RENTAL": "Can I camp at the venue if I don't own a tent?",
+    "A_TENT_RENTAL": "Yes, absolutely! If you would love to camp on-site but don't have your own gear, just let us know. We can easily arrange and organize tents and equipment for you."
   },
   "COUNTDOWN": {
     "DAYS": "Days",

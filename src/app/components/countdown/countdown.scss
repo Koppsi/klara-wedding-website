@@ -38,8 +38,32 @@
 }
 
 /* Mobile */
+/* Mobile */
 @media (max-width: 768px) {
-  .countdown-container { gap: 15px; }
-  .time-block .number { font-size: 2rem; }
-  .separator { font-size: 1.5rem; margin-bottom: 15px; }
+  .countdown-container { 
+    gap: 8px; /* Deutlich kleinerer Abstand zwischen den Blöcken */
+    width: 100%;
+    box-sizing: border-box; /* Verhindert das Ausbrechen */
+  }
+
+  .time-block { 
+    min-width: 55px; /* Gerade genug Platz für 2 Ziffern, ohne zu zappeln */
+  }
+  
+  .time-block .number { 
+    font-size: 1.8rem; /* Etwas kleiner, damit alle 4 passen */
+  }
+
+  .time-block .label { 
+    font-size: 0.65rem; /* Filigrane Schrift */
+    letter-spacing: 1px; /* WICHTIG: Weniger Spacing, sonst wird das Wort zu breit! */
+    margin-top: 5px;
+  }
+  
+  .separator { 
+    font-size: 1.5rem; 
+    margin-bottom: 22px; /* Setzt den Doppelpunkt optisch exakt in die Mitte der Zahlen */
+    margin-left: -3px; /* Zieht die Blöcke noch etwas enger zusammen */
+    margin-right: -3px;
+  }
 }

@@ -60,9 +60,11 @@
   align-items: center;
   
   /* Hover Effekt für die Frage */
-  &:hover {
-    h3 { color: var(--color-gold); }
-    .toggle-icon::before, .toggle-icon::after { background-color: var(--color-gold); }
+  @media (hover: hover) {
+    &:hover {
+      h3 { color: var(--color-gold); }
+      .toggle-icon::before, .toggle-icon::after { background-color: var(--color-gold); }
+    }
   }
 
   h3 {
