@@ -25,7 +25,7 @@
 
         <div class="faq-answer">
           <div class="answer-content">
-            <p>{{ item.answer | translate }}</p>
+            <p [innerHTML]="item.answer | translate"></p>       
           </div>
         </div>
 

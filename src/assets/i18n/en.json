@@ -9,12 +9,12 @@
     "LABEL_VENUE": "Venue",
     "VENUE_NAME": "<a href='https://www.klausenbauernhof.de/' target='_blank' rel='noopener noreferrer' class='venue-link'>Klausenbauernhof</a> <br> Ippichen 1 <br> 77709 Wolfach <br> Black Forest",
     "LABEL_ARRIVAL": "Arrival",
-    "ARRIVAL_TIME": "to be announced",
+    "ARRIVAL_TIME": "Expected around noon (exact time to be announced)",
     "LABEL_RECEPTION": "Reception",
     "RECEPTION_TIME": "6:00 PM - Open End",
     "TRAVEL_TITLE": "Travel & Stay",
     "TRAVEL_INFO": "There are some lovely hotels and apartments in the area. The Klausenbauernhof also offers the possibility to sleep in your own van or set up your tent.",
-    "BLACK_FOREST_INFO": "The Black Forest is a great place to add a few days for hiking, mountain biking or spas. <br> You can find more info <a href='https://www.schwarzwald-tourismus.info/' target='_blank' rel='noopener noreferrer' class='venue-link'>here</a> or contact us."
+    "BLACK_FOREST_INFO": "The Black Forest is a great place to add a few days for hiking, mountain biking or spas. <br> You can find more info <a href='https://www.schwarzwald-tourismus.info/' target='_blank' rel='noopener noreferrer' class='venue-link'>here</a> or <a href='/contact' target='_blank' rel='noopener noreferrer' class='venue-link'>contact us</a>."
   },
   "HERO": {
     "DATE": "Saturday, September 12, 2026",
@@ -75,8 +75,8 @@
     "A_RSVP_DEADLINE": "Please let us know if you can make it by July 31st, 2026. This helps us plan the food and seating!",
     
     "Q_DRESSCODE": "What is the dress code?",
-    "A_DRESSCODE": "We'd love to see our family and friends get dressed up with us! The dress code is summer-chique - we'd love to see some colours! Please keep in mind that the Klausenbauernhof is an old farm. We'd suggest not wearing your thinnest heels.",
-    
+    "A_DRESSCODE": "We would love for you to dress up with us! Feel free to bring plenty of color - there are zero restrictions (yes, even white is totally fine). If you want to go all out with your outfit, please do! <br><br> A quick footwear tip: The Klausenbauernhof is an old, historic farm. To stay comfortable on your feet, we'd recommend leaving thin stiletto heels at home. <br><br> Need some ideas? Check out our <a href='https://pin.it/3bsSQ8Vnk' target='_blank' rel='noopener noreferrer' style='text-decoration: underline; font-weight: bold;'>inspiration collage here</a>.",
+
     "Q_PLUS_ONE": "Can I bring a plus one?",
     "A_PLUS_ONE": "Our goal is to keep the day as intimate as possible. We can therefore unfortunately not accomodate a plus one.",
     
@@ -93,7 +93,7 @@
     "A_ACCOMODATION": "There are spaces for your camping-vans or tents. Please let us know, if you're planning to stay at the venue.",
 
     "Q_FLIGHTS": "Which airports are nearby?",
-    "A_FLIGHTS": "The closest airports are Strasbourg (SXB), Karlsruhe/Baden-Baden (FKB), Stuttgart Airport (STR), or EuroAirport Basel Mulhouse Freiburg (BSL). From there, we recommend continuing your journey by rental car or train.",
+    "A_FLIGHTS": "The most convenient international airports are Frankfurt (FRA), Zurich (ZRH), and Munich (MUC). All of them offer train connections into the Black Forest, or you can easily rent a car from there. If you need any further information or help with your travel plans, please feel free to reach out to us!",
 
     "Q_TENT_RENTAL": "Can I camp at the venue if I don't own a tent?",
     "A_TENT_RENTAL": "Yes, absolutely! If you would love to camp on-site but don't have your own gear, just let us know. We can easily arrange and organize tents and equipment for you."
