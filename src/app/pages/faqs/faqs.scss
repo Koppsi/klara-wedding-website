@@ -113,8 +113,9 @@
   }
   
   .faq-answer {
-    max-height: 500px; /* Groß genug für lange Texte */
+    max-height: 800px; /* Groß genug für lange Texte */
     opacity: 1;
+    overflow: visible;
 
     ::ng-deep a {
     color: var(--color-text-dark); /* Bleibt schön hell (Weiß) */
@@ -160,5 +161,50 @@
     text-decoration: underline;
     font-weight: bold;
     &:hover { color: var(--color-gold); }
+  }
+}
+
+/* --- HOVER BILD FÜR DEN DRESSCODE LINK --- */
+::ng-deep .hover-img-wrapper {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  z-index: 100;
+
+  /* Der eigentliche Text-Link */
+  a {
+    text-decoration: underline;
+    font-weight: bold;
+    color: var(--color-text-dark);
+  }
+
+  /* Das echte Bild */
+  .hover-preview {
+    position: absolute;
+    bottom: 120%; /* Positioniert das Bild über dem Link */
+    left: 50%;
+    transform: translateX(-50%) translateY(0);
+    
+    width: 260px; /* Breite festlegen... */
+    height: auto; /* ...und Höhe passt sich automatisch perfekt an! */
+    
+    background-color: #ffffff;
+    padding: 6px; /* Gibt dem Bild einen tollen weißen Polaroid-Rand */
+    border-radius: 4px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+    
+    /* Startzustand: Unsichtbar */
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    z-index: 99999;
+  }
+
+  /* Beim Hovern über den gesamten Text-Bereich: Bild einblenden */
+  &:hover .hover-preview {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(-10px); /* Schwebt sanft nach oben */
   }
 }
