@@ -101,3 +101,10 @@
     }
   }
 }
+
+.caption {
+  /* ... dein bisheriger Code ... */
+  
+  /* Zwingt das Feld dazu, immer mindestens so hoch wie eine Textzeile zu sein */
+  min-height: 1.5em; 
+}

@@ -118,7 +118,7 @@
 .contact-link {
   display: flex;
   align-items: center;
-  text-decoration: none;
+  text-decoration: none; /* WICHTIG: Schaltet die Unterstreichung für den GANZEN Link aus */
   font-family: var(--font-sans);
   font-size: 1.05rem;
   color: var(--color-text-dark);
@@ -126,18 +126,72 @@
   margin-bottom: 12px;
   padding-left: 5px;
 
+  /* Das Icon Styling */
   .icon {
     font-size: 1.2rem;
     margin-right: 15px;
-    color: var(--color-gold); /* Edle Gold-Akzente */
+    color: var(--color-gold);
     transition: transform 0.3s ease;
   }
 
+  /* Die neue Klasse nur für die unterstrichenen Wörter */
+  .highlight-underline {
+    text-decoration-color: var(--color-text-dark); /* Schwarze Linie */
+    text-underline-offset: 4px; /* Minimaler Abstand zur Linie */
+    margin-left: 4px; /* Kleiner Abstand nach dem Doppelpunkt */
+  }
+
+  /* Hover-Effekte */
   &:hover {
     color: var(--color-gold);
     
     .icon {
-      transform: scale(1.1); /* Kleiner Hover-Effekt auf dem Icon */
+      transform: scale(1.1); /* Icon wird etwas größer */
+    }
+    
+    .highlight-underline {
+      text-decoration-color: var(--color-gold); /* Linie wird beim Hovern passend zum Text auch gold */
+    }
+  }
+}
+
+.contact-person {
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--color-text-dark);
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.contact-detail {
+  display: flex;
+  align-items: center;
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
+  color: var(--color-text-dark);
+  margin-bottom: 12px;
+  padding-left: 5px;
+
+  /* Das goldene Icon */
+  .icon {
+    font-size: 1.2rem;
+    margin-right: 15px;
+    color: var(--color-gold);
+  }
+
+  /* Der klickbare, unterstrichene Teil (WhatsApp & E-Mail) */
+  .highlight-link {
+    color: var(--color-text-dark);
+    text-decoration: underline;
+    text-decoration-color: var(--color-text-dark);
+    text-underline-offset: 4px;
+    font-weight: 600; /* Macht den Link etwas kräftiger */
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: var(--color-gold);
+      text-decoration-color: var(--color-gold);
     }
   }
 }
