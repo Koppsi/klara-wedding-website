@@ -10,8 +10,8 @@
     "VENUE_NAME": "<a href='https://www.klausenbauernhof.de/' target='_blank' rel='noopener noreferrer' class='venue-link'>Klausenbauernhof</a> <br> Ippichen 1 <br> 77709 Wolfach <br> Schwarzwald",
     "LABEL_ARRIVAL": "Ankunft",
     "ARRIVAL_TIME": "Voraussichtlich am Mittag (genaue Uhrzeit folgt)",
-    "LABEL_RECEPTION": "Feier",
-    "RECEPTION_TIME": "18:00 Uhr - Open End",
+    "LABEL_RECEPTION": "Ablauf",
+    "RECEPTION_TIME": "Wird noch bekannt gegeben",
     "TRAVEL_TITLE": "Anreise & Unterkunft",
     "TRAVEL_INFO": "In der Umgebung gibt es einige schöne Hotels und Ferienwohnungen. Der Klausenbauernhof bietet zudem die Möglichkeit, im eigenen Camper zu übernachten oder ein Zelt aufzuschlagen.",
     "BLACK_FOREST_INFO": "Der Schwarzwald ist ein idealer Ort, um ein paar Tage zum Wandern, Mountainbiken oder für Wellness-Besuche dranzuhängen. <br> Weitere Infos dazu findet ihr <a href='https://www.schwarzwald-tourismus.info/' target='_blank' rel='noopener noreferrer' class='venue-link'>hier</a> oder <a href='/contact' target='_blank' rel='noopener noreferrer' class='venue-link'>fragt uns</a>."
@@ -75,7 +75,7 @@
     "A_RSVP_DEADLINE": "Bitte gebt uns bis zum 31. Juli 2026 Bescheid, damit wir das Essen und die Sitzordnung planen können.",
     
     "Q_DRESSCODE": "Gibt es einen Dresscode?",
-    "A_DRESSCODE": "Wir freuen uns, wenn ihr euch mit uns schick macht! Bringt gerne Farbe ins Spiel – eurer Kreativität sind keine Grenzen gesetzt (ja, auch Richtung Weiß ist völlig okay). Wer endlich mal wieder sein Abiballkleid tragen will: Nur zu! <br><br> Kleiner Tipp für die Schuhe: Der Klausenbauernhof ist ein alter Bauernhof. Von High Heels mit dünnen Absätzen raten wir euch daher eher ab. <br><br> Hier findet ihr eine kleine <a href='https://pin.it/3bsSQ8Vnk' target='_blank' rel='noopener noreferrer' style='text-decoration: underline; font-weight: bold;'>Collage als Inspiration</a>.",
+    "A_DRESSCODE": "Wir freuen uns, wenn ihr euch mit uns schick macht! Bringt gerne Farbe ins Spiel – eurer Kreativität sind keine Grenzen gesetzt (ja, auch Richtung Weiß ist völlig okay). Wer endlich mal wieder sein Abiballkleid tragen will: Nur zu! <br><br> Kleiner Tipp für die Schuhe: Der Klausenbauernhof ist ein alter Bauernhof. Von High Heels mit dünnen Absätzen raten wir euch daher eher ab. <br><br> Hier findet ihr eine kleine <span class='hover-img-wrapper'><a href='https://pin.it/3bsSQ8Vnk' target='_blank' rel='noopener noreferrer'>Collage als Inspiration</a><img src='assets/img/WeddingDresses.jpeg' class='hover-preview'></span>.",
 
     "Q_PLUS_ONE": "Kann ich eine Begleitung mitbringen?",
     "A_PLUS_ONE": "Wir möchten den Tag im kleineren Kreis feiern. Daher bitten wir um Verständnis, dass wir keine Plus Ones ermöglichen können.",

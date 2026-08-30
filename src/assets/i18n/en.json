@@ -10,8 +10,8 @@
     "VENUE_NAME": "<a href='https://www.klausenbauernhof.de/' target='_blank' rel='noopener noreferrer' class='venue-link'>Klausenbauernhof</a> <br> Ippichen 1 <br> 77709 Wolfach <br> Black Forest",
     "LABEL_ARRIVAL": "Arrival",
     "ARRIVAL_TIME": "Expected around noon (exact time to be announced)",
-    "LABEL_RECEPTION": "Reception",
-    "RECEPTION_TIME": "6:00 PM - Open End",
+    "LABEL_RECEPTION": "Schedule",
+    "RECEPTION_TIME": "To be announced",
     "TRAVEL_TITLE": "Travel & Stay",
     "TRAVEL_INFO": "There are some lovely hotels and apartments in the area. The Klausenbauernhof also offers the possibility to sleep in your own van or set up your tent.",
     "BLACK_FOREST_INFO": "The Black Forest is a great place to add a few days for hiking, mountain biking or spas. <br> You can find more info <a href='https://www.schwarzwald-tourismus.info/' target='_blank' rel='noopener noreferrer' class='venue-link'>here</a> or <a href='/contact' target='_blank' rel='noopener noreferrer' class='venue-link'>contact us</a>."
@@ -75,7 +75,7 @@
     "A_RSVP_DEADLINE": "Please let us know if you can make it by July 31st, 2026. This helps us plan the food and seating!",
     
     "Q_DRESSCODE": "What is the dress code?",
-    "A_DRESSCODE": "We would love for you to dress up with us! Feel free to bring plenty of color - there are zero restrictions (yes, even white is totally fine). If you want to go all out with your outfit, please do! <br><br> A quick footwear tip: The Klausenbauernhof is an old, historic farm. To stay comfortable on your feet, we'd recommend leaving thin stiletto heels at home. <br><br> Need some ideas? Check out our <a href='https://pin.it/3bsSQ8Vnk' target='_blank' rel='noopener noreferrer' style='text-decoration: underline; font-weight: bold;'>inspiration collage here</a>.",
+    "A_DRESSCODE": "We would love for you to dress up with us! Feel free to bring plenty of color - there are zero restrictions (yes, even white is totally fine). If you want to go all out with your outfit, please do! <br><br> A quick footwear tip: The Klausenbauernhof is an old, historic farm. To stay comfortable on your feet, we'd recommend leaving thin stiletto heels at home. <br><br> Need some ideas? Check out our <span class='hover-img-wrapper'><a href='https://pin.it/3bsSQ8Vnk' target='_blank' rel='noopener noreferrer'>inspiration collage here</a><img src='assets/img/WeddingDresses.jpeg' class='hover-preview'></span>.",
 
     "Q_PLUS_ONE": "Can I bring a plus one?",
     "A_PLUS_ONE": "Our goal is to keep the day as intimate as possible. We can therefore unfortunately not accomodate a plus one.",
